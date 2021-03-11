@@ -5,8 +5,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'Over-Reg':['Overpass-Reg'],
-      'Over-SemiBold':['Overpass SemiBold']
+      'Over-Reg':['Overpass-Regular'],
+      'Over-SemiBold':['Overpass-SemiBold'],
      },
      fontSize: {
       'first-header': ['42px', {
@@ -19,12 +19,21 @@ module.exports = {
       'paragraph': ['17px', {
         lineHeight: '32px',
       }],
+      'bottom-header': ['32px', {
+        lineHeight: '49px',
+      }],
+      'placeholder': ['17px', {
+        lineHeight: '27px',
+      }],
+      'select-text': ['21.6px', {
+        lineHeight: '22px',
+      }],
     },
     extend: {
     screens: {
       'phone': '423px',
     },
-      width: {
+      width: { 
         'input': '545px',
       },
       colors: {
