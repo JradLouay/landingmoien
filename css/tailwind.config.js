@@ -40,7 +40,8 @@ module.exports = {
         "moien-pink": "#FEEDEC",
         "moien-blue": "#010D3C",
         "moien-lightblue": "#DAE8FF",
-        "moien-gray": "#808093"
+        "moien-gray": "#808093",
+        "moien-green": "#40DCB6"
       },
     },
   },

@@ -7,7 +7,6 @@
     <link href="css/dist/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="css/typography-font/style.css">
     <title>Moïen</title>
-    
 </head>
 <body>
     <section class="h-screen bg-moien-pink text-moien-blue">
@@ -28,11 +27,12 @@
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                   </svg>
                 </button>
-                <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 lg:ml-0 lg:left-3/4 lg:-translate-x-3/ opacity-0">
+                <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 lg:ml-0 lg:left-3/4 lg:-translate-x-3/">
                     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
                       <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> <!-- gap between rows and sm:gap-8 sm:p-8 columns grid layout -->
                         <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           <img class="flex-shrink-0 h-6 w-6" src="assets/country/european-union.svg" alt="Kiwi standing on oval">
+                          <!-- <svg class="flex-shrink-0 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg> -->
                           <div class="ml-2">
                             <p class="text-base font-medium text-moien-blue">
                               Français
@@ -41,6 +41,16 @@
                         </a>
                         <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
+                          <!-- <svg class="flex-shrink-0 h-6 w-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
+                            <clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath>
+                            <clipPath id="b"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath>
+                            <g clip-path="url(#a)"><path d="M0 0v30h60V0z" fill="#012169"/>
+                              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+                              <path d="M0 0l60 30m0-30L0 30" clip-path="url(#b)" stroke="#C8102E" stroke-width="4"/>
+                            <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+                            <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+                            </g>
+                        </svg> -->
                           <div class="ml-2">
                             <p class="text-base font-medium text-moien-blue">
                               Anglais
@@ -57,44 +67,86 @@
     <section class="flex-col sm:flex"> 
         <div class="text-moien-blue text-left sm:ml-40 sm:mt-32">
             <h2 class="text-first-header font-Over-SemiBold mb-5">Louez, sous-louez,<br> vivez et voyagez !<h2>
-                <p class="text-paragraph font-Over-Reg">Découvrez une nouvelle expérience locative<br> et simplifiez vos démarches avec Moïen.  </p>
+                <p class="text-paragraph font-Over-Reg">Découvrez une nouvelle expérience locative<br> et simplifiez vos démarches avec Moïen.</p>
         </div>
     </section>
 </section>
     <!-- first arg -->
     <section class="flex justify-center sm:justify-end bg-moien-lightblue"> 
         <div class="rounded-lg bg-white shadow-lg text-left sm:mr-56 sm:mt-32 p-8">
-            <h2 class="mb-7 text-second-header text-moien-blue font-Over-SemiBold">Une seule application pour<br> tous vos besoins<h2>
-                <p class="font-Over-Reg font-normal text-paragraph text-moien-gray mb-8">Utilisez une seule et même plateforme pour trouver un<br> logement longue durée, gérer vos locations au quotidien et<br> planifier vos vacances.</p>
-                <p class="font-Over-Reg text-paragraph text-moien-gray">Bénéficiez des avantages d’une sous-location encadrée, en<br> tant que propriétaire et locataire.</p>
+            <h2 class="mb-7 text-second-header text-moien-blue font-Over-SemiBold">Une seule application pour<br class="hidden sm:block"> tous vos besoins<h2>
+                <p class="font-Over-Reg font-normal text-paragraph text-moien-gray mb-8">Utilisez une seule et même plateforme pour trouver un<br class="hidden sm:block"> logement longue durée, gérer vos locations au quotidien et<br class="hidden sm:block"> planifier vos vacances.</p>
+                <p class="font-Over-Reg text-paragraph text-moien-gray">Bénéficiez des avantages d’une sous-location encadrée, en<br class="hidden sm:block"> tant que propriétaire et locataire.</p>
         </div> 
     </section>
     <!-- 2nd arg --> 
     <section class="flex bg-moien-lightblue"> 
         <div class="rounded-lg bg-white shadow-lg mt-4 text-left sm:ml-56 sm:mt-32 p-8">
-            <h2 class="mb-7 text-second-header text-moien-blue font-Over-SemiBold">Votre parcours locatif géré <br>de A à Z<h2>
-                <p class="font-Over-Reg text-paragraph text-moien-gray">Simplifiez vos démarches en tant que locataire,<br>propriétaire ou professionnel de l’immobilier.</p>
-                <ul class="font-Over-Reg text-paragraph text-moien-gray">
-                    <li class="flex flex-row items-center"><img class="text-green w-4" src="assets/checkmark.svg">Publication de biens courte et longue durée</li>
-                    <li class="flex flex-row items-center"><img class="text-green w-4" src="assets/checkmark.svg">Réservation et prise de rendez-vous</li>
-                    <li class="flex flex-row items-center"><img class="text-green w-4" src="assets/checkmark.svg">Saisie du dossier locatif</li>
-                    <li class="flex flex-row items-center"><img class="text-green w-4" src="assets/checkmark.svg">État des lieux pré-rempli</li>
-                    <li class="flex flex-row items-center"><img class="text-green w-4" src="assets/checkmark.svg">Paiement des loyers</li>
-                    <li class="flex flex-row items-center"><img class="text-green w-4" src="assets/checkmark.svg">Déclaration et gestion des sinistres</li>
+            <h2 class="mb-7 text-second-header text-moien-blue font-Over-SemiBold">Votre parcours locatif géré <br class="hidden sm:block">de A à Z<h2>
+                <p class="font-Over-Reg text-paragraph text-moien-gray">Simplifiez vos démarches en tant que locataire,<br class="hidden sm:block">propriétaire ou professionnel de l’immobilier.</p>
+                <ul class="font-Over-Reg text-paragraph text-moien-gray mt-8 phone:mt-12">
+                      <li class="flex items-stretch">
+                        <div class="mt-1 mr-2">
+                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                          </svg>
+                        </div>
+                          Publication de biens courte et longue durée
+                      </li>
+                      <li class="flex items-stretch">
+                        <div class="mt-1 mr-2">
+                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                          </svg>
+                        </div>
+                        Réservation et prise de rendez-vous
+                      </li>
+                      <li class="flex items-stretch">
+                        <div class="mt-1 mr-2">
+                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                          </svg>
+                        </div>
+                        Saisie du dossier locatif
+                      </li>
+                      <li class="flex items-stretch">
+                        <div class="mt-1 mr-2">
+                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                          </svg>
+                        </div>
+                        État des lieux pré-rempli
+                      </li>
+                      <li class="flex items-stretch">
+                        <div class="mt-1 mr-2">
+                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                          </svg>
+                        </div>
+                        Paiement des loyers 
+                      </li>
+                      <li class="flex items-stretch">
+                        <div class="mt-1 mr-2">
+                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                          </svg>
+                        </div>
+                        Déclaration et gestion des sinistres  
+                      </li>
                   </ul> 
         </div>
     </section>
     <!-- 3rd arg -->
     <section class="flex justify-end bg-moien-lightblue"> 
         <div class="rounded-lg bg-white shadow-lg mt-4 mb-10 text-left sm:mr-56 sm:mt-36 sm:mb-44 p-8">
-            <h2 class="mb-8 text-second-header text-moien-blue font-Over-SemiBold">Un impact sur l’environnement<br> limité<h2>
-                <p class="font-Over-Reg text-paragraph text-moien-gray">Voyagez responsable : pour les locations courte durée, les<br> frais de service sont calculés en fonction de la distance<br> parcourue. Les émissions de CO2 générées par les voyages<br> sont compensées (un voyage = un arbre planté).</p>
+            <h2 class="mb-8 text-second-header text-moien-blue font-Over-SemiBold">Un impact sur l’environnement<br class="hidden sm:block"> limité<h2>
+                <p class="font-Over-Reg text-paragraph text-moien-gray">Voyagez responsable : pour les locations courte durée, les<br class="hidden sm:block"> frais de service sont calculés en fonction de la distance<br class="hidden sm:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden sm:block"> sont compensées (un voyage = un arbre planté).</p>
         </div>
     </section>
     <section 
     class="relative flex flex-col justify-center text-center items-stretch sm:items-center bg-moien-pink pt-12"> 
       <!-- <div class="flex absolute px-6 phone:px-8 justify-center items-stretch w-full h-16 -top-6"> -->
-      <div class="flex absolute px-6 phone:px-8 justify-center w-full h-16 -top-6">
+      <div class="flex absolute px-6 phone:px-8 justify-center w-full h-16 -top-8">
         <div class="flex w-input justify-end">
           <img src="assets/img/Oval@2x.png" alt="moien-icon" srcset="">
         </div>
