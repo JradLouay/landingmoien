@@ -33,6 +33,9 @@ module.exports = {
     screens: {
       'phone': '423px',
     },
+    spacing: {
+      'margin-cards': '15.45%',
+    },
       width: { 
         'input': '545px',
       },
