@@ -11,7 +11,7 @@
 <body>
     <section class="h-screen bg-moien-pink text-moien-blue">
     <Header> 
-        <div class="flex justify-between items-center px-2 py-6 sm:px-8 sm:py-8 lg:px-16 lg:py-10"> 
+        <div class="flex justify-between items-center py-6 px-padding-page-x sm:py-8 lg:py-10"> 
             <div class="flex">
               <a href="#" class="whitespace-nowrap text-first-header font-Over-SemiBold font-medium hover:text-moien-gray">
               Moïen
@@ -19,15 +19,15 @@
             </div>
             <div class="relative">
                 <button onclick="toggleList('listItem1')" type="button" 
-                class="group inline-flex items-center 
-                text-select-text font-Over-Reg font-light hover:text-moien-gray 
-                focus:outline-none" aria-expanded="false">
-                  <span>FR</span>
-                  <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                  </svg>
+                    class="group inline-flex items-center 
+                    text-select-text font-Over-Reg font-light hover:text-moien-gray 
+                    focus:outline-none" aria-expanded="false">
+                      <span>FR</span>
+                      <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
                 </button>
-                <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 lg:ml-0 lg:left-3/4 lg:-translate-x-3/">
+                <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 lg:ml-0 lg:left-3/4 lg:-translate-x-3/ opacity-0">
                     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
                       <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> <!-- gap between rows and sm:gap-8 sm:p-8 columns grid layout -->
                         <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
@@ -41,16 +41,6 @@
                         </a>
                         <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                          <!-- <svg class="flex-shrink-0 h-6 w-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
-                            <clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath>
-                            <clipPath id="b"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath>
-                            <g clip-path="url(#a)"><path d="M0 0v30h60V0z" fill="#012169"/>
-                              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
-                              <path d="M0 0l60 30m0-30L0 30" clip-path="url(#b)" stroke="#C8102E" stroke-width="4"/>
-                            <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
-                            <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
-                            </g>
-                        </svg> -->
                           <div class="ml-2">
                             <p class="text-base font-medium text-moien-blue">
                               Anglais
@@ -64,30 +54,45 @@
           </div>
     </Header>
     <!-- Hero section --> 
-    <section class="flex-col px-2 sm:flex sm:px-0" > 
-        <div class="text-moien-blue text-left sm:ml-40 sm:mt-32">
-            <h2 class="text-first-header font-Over-SemiBold mb-5">Louez, sous-louez,<br> vivez et voyagez !<h2>
-                <p class="text-paragraph font-Over-Reg">Découvrez une nouvelle expérience locative<br> et simplifiez vos démarches avec Moïen.</p>
+    <section class="bg-moien-lightblue flex flex-col items-center sm:flex-row phone:px-2 sm:px-0" > 
+        <div class="text-moien-blue text-left phone:ml-margin-hero-left phone:mt-margin-hero-top">
+            <h2 class="first-header-mobile phone:text-first-header text-center phone:text-left font-Over-SemiBold mb-5">Louez, sous-louez,<br class="hidden sm:block"> vivez<br class="block phone:hidden"> et voyagez !<h2>
+                <p class="text-paragraph-mobile phone:text-paragraph text-center phone:text-left font-Over-Reg">Découvrez une nouvelle<br class="block sm:hidden"> expérience locative<br class="hidden sm:block"> et simplifiez<br class="block sm:hidden"> vos démarches avec Moïen.</p>
+        </div>
+        <div class="block sm:hidden bg-gray-100 mt-6 phone:mt-0 h-60 w-full">
+
         </div>
     </section>
 </section>
     <!-- first arg -->
-    <section class="flex justify-center sm:justify-end px-2 sm:px-0 bg-moien-lightblue"> 
-        <div class="rounded-lg bg-white shadow-lg text-left sm:mr-margin-cards mt-4 sm:mt-32 p-8">
-            <h2 class="mb-7 text-second-header text-moien-blue font-Over-SemiBold">Une seule application pour<br class="hidden sm:block"> tous vos besoins<h2>
-                <p class="font-Over-Reg font-normal text-paragraph text-moien-gray mb-8">Utilisez une seule et même plateforme pour trouver un<br class="hidden sm:block"> logement longue durée, gérer vos locations au quotidien et<br class="hidden sm:block"> planifier vos vacances.</p>
-                <p class="font-Over-Reg text-paragraph text-moien-gray">Bénéficiez des avantages d’une sous-location encadrée, en<br class="hidden sm:block"> tant que propriétaire et locataire.</p>
+    <section class="flex justify-center sm:justify-end px-8 sm:px-0 bg-moien-lightblue"> 
+        <div class="rounded-lg bg-white shadow-lg pt-4 pb-6 text-left sm:mr-margin-cards mt-4 sm:mt-32 px-padding-x-card-mobile phone:px-padding-x-card">
+            <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+              Une seule application pour<br class="hidden sm:block"> tous vos besoins
+             <h2>
+                <p class="font-Over-Reg font-normal text-paragraph-mobile phone:text-paragraph text-moien-gray mb-8 text-center phone:text-left">
+                  Utilisez une seule et même plateforme pour trouver un<br class="hidden sm:block"> 
+                  logement longue durée, gérer vos locations au quotidien et<br class="hidden sm:block"> planifier vos vacances.
+                </p>
+                <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-center phone:text-left text-moien-gray">
+                  Bénéficiez des avantages d’une sous-location encadrée, en<br class="hidden sm:block"> 
+                  tant que propriétaire et locataire.
+                </p>
         </div> 
     </section>
     <!-- 2nd arg --> 
-    <section class="flex bg-moien-lightblue px-2 sm:px-0"> 
-        <div class="rounded-lg bg-white shadow-lg mt-4 text-left sm:ml-margin-cards sm:mt-32 p-8">
-            <h2 class="mb-7 text-second-header text-moien-blue font-Over-SemiBold">Votre parcours locatif géré <br class="hidden sm:block">de A à Z<h2>
-                <p class="font-Over-Reg text-paragraph text-moien-gray">Simplifiez vos démarches en tant que locataire,<br class="hidden sm:block">propriétaire ou professionnel de l’immobilier.</p>
-                <ul class="font-Over-Reg text-paragraph text-moien-gray mt-8 phone:mt-12">
+    <section class="flex bg-moien-lightblue px-8 sm:px-0"> 
+        <div class="rounded-lg bg-white shadow-lg pt-4 pb-6 phone:pt-6 mt-4 text-left sm:ml-margin-cards sm:mt-32 px-padding-x-card-mobile phone:px-padding-x-card">
+            <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+              Votre parcours locatif géré <br class="hidden sm:block">de A à Z
+              <h2>
+                <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray text-center phone:text-left">
+                  Simplifiez vos démarches en tant que locataire,<br class="hidden sm:block">propriétaire ou professionnel de l’immobilier.
+                </p>
+                <ul class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray mt-8 phone:mt-12">
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
-                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
                           </svg>
                         </div>
@@ -95,7 +100,7 @@
                       </li>
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
-                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
                           </svg>
                         </div>
@@ -103,7 +108,7 @@
                       </li>
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
-                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
                           </svg>
                         </div>
@@ -111,7 +116,7 @@
                       </li>
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
-                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
                           </svg>
                         </div>
@@ -119,7 +124,7 @@
                       </li>
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
-                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
                           </svg>
                         </div>
@@ -127,7 +132,7 @@
                       </li>
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
-                          <svg class="h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
                           </svg>
                         </div>
@@ -138,23 +143,37 @@
     </section>
     
     <!-- 3rd arg -->
-    <section class="flex justify-end bg-moien-lightblue px-2 sm:px-0"> 
-        <div class="rounded-lg bg-white shadow-lg mt-4 mb-10 text-left sm:mr-margin-cards sm:mt-36 sm:mb-44 p-8">
-            <h2 class="mb-8 text-second-header text-moien-blue font-Over-SemiBold">Un impact sur l’environnement<br class="hidden sm:block"> limité<h2>
-                <p class="font-Over-Reg text-paragraph text-moien-gray">Voyagez responsable : pour les locations courte durée, les<br class="hidden sm:block"> frais de service sont calculés en fonction de la distance<br class="hidden sm:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden sm:block"> sont compensées (un voyage = un arbre planté).</p>
+    <section class="flex justify-end bg-moien-lightblue px-8 pb-6 sm:px-0 sm:pb-0"> 
+        <div class="rounded-lg bg-white shadow-lg pt-4 pb-8 phone:pt-6 phone:pb-11 px-padding-x-card-mobile phone:px-padding-x-card  mt-4 mb-10 sm:mr-margin-cards sm:mt-36 sm:mb-44">
+            <h2 class="mb-margin-header-parag-mobile phone:mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+              Un impact sur l’environnement<br class="hidden sm:block"> limité
+            </h2>
+                <p class="font-Over-Reg text-center phone:text-left text-paragraph-mobile phone:text-paragraph text-moien-gray">
+                  Voyagez responsable : pour les locations courte durée, les<br class="hidden phone:block"> frais de service sont calculés en fonction de la distance<br class="hidden phone:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden phone:block"> sont compensées (un voyage = un arbre planté).</p>
         </div>
     </section>
+    <!-- break point-545px -->
+    <!-- <section class="flex justify-end bg-moien-lightblue px-8 pb-6 sm:px-0 sm:pb-0"> 
+      <div class="rounded-lg bg-white shadow-lg pt-4 pb-8 px-padding-x-card-mobile small-device:px-padding-x-card small-device:pt-6 small-device:pb-11 mt-4 mb-10 sm:mr-margin-cards sm:mt-36 sm:mb-44">
+          <h2 class="mb-4 small-device:mb-8 text-center small-device:text-left text-second-header-mobile small-device:text-second-header text-moien-blue font-Over-SemiBold">
+            Un impact sur l’environnement<br class="hidden sm:block"> limité<h2>
+              <p class="font-Over-Reg text-center small-device:text-left text-paragraph-mobile small-device:text-paragraph text-moien-gray">
+                Voyagez responsable : pour les locations courte durée, les<br class="hidden small-device:block"> frais de service sont calculés en fonction de la distance<br class="hidden phone:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden phone:block"> sont compensées (un voyage = un arbre planté).</p>
+      </div>
+  </section> -->
+    
     <section 
     class="relative flex flex-col justify-center text-center items-stretch sm:items-center bg-moien-pink pt-12"> 
       <!-- <div class="flex absolute px-6 phone:px-8 justify-center items-stretch w-full h-16 -top-6"> -->
       <div class="flex absolute px-6 phone:px-8 justify-center w-full h-16 -top-8">
-        <div class="flex w-input justify-end">
+        <div class="flex w-input justify-center sm:justify-end">
           <img src="assets/img/Oval@2x.png" alt="moien-icon" srcset="">
         </div>
       </div>
-      <h2 class="mb-6 text-bottom-header text-moien-blue font-Over-SemiBold ">Restez informés !</h2>
-        <p class="font-Over-Reg text-paragraph text-moien-blue">Inscrivez-vous pour recevoir nos dernières actualités</p>
-        <div class="sm:flex px-6 phone:px-8 justify-center items-stretch"> <div class="flex justify-center mt-9 mb-16 h-10 font-Over-Reg text-placeholder text-moien-blue bg-moien-pink border-b border-moien-blue">
+      <h2 class="mb-6 text-second-header-mobile phone:text-bottom-header text-moien-blue font-Over-SemiBold ">Restez informés !</h2>
+        <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-blue">Inscrivez-vous pour recevoir nos <br class="block small-device:hidden"> dernières actualités</p>
+        <div class="sm:flex px-6 phone:px-8 justify-center items-stretch"> 
+          <div class="flex justify-center mt-9 mb-16 h-10 font-Over-Reg text-placeholder text-moien-blue bg-moien-pink border-b border-moien-blue">
                     <input type="text" name="company_website" id="company_website" 
                     class="flex-1 block w-input focus:outline-none bg-moien-pink" placeholder="Entrez votre adresse email">
                     <a href="" class="inline-flex items-center w-4">
@@ -164,21 +183,25 @@
           </div>
     </section>
     <footer> 
-      <div class="flex bg-moien-blue text-white font-Over-Reg justify-between items-center px-2 sm:px-8 lg:px-16 py-6 ">
-        <p class="hover:text-moien-gray"><u >Mentions légales</u> - <a href=""><u>contact@moïen.com</u></a></p>
-        <div class="relative">
+      <div class="flex justify-center small-device:justify-between items-center px-14 small-device:px-padding-page-x bg-moien-blue text-white text-center font-Over-Reg py-6 ">
+        <p class="hover:text-moien-gray">
+          <u>Mentions légales</u> - <a href="">
+          <u>contact@moïen.com</u></a> - <u><br class="block small-device:hidden">© 2021 Moïen</u>
+        </p>
+        <div class="relative hidden small-device:block">
             <button onclick="toggleList('listItem2')" type="button" class="group inline-flex items-center text-select-text font-Over-Reg font-light font-medium hover:text-gray-500 focus:outline-none focus:border-b-2 focus:ring-offset-2 focus:ring-moien-pink" aria-expanded="false">
               <span>FR</span>
               <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
             </button>
-            <!-- <div id="listItem2" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 -translate-y-52 lg:ml-0 lg:left-3/4 lg:-translate-y-56/">
-              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
-                <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg text-moien-blue">    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+            <div id="listItem2" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-24 -translate-y-32 lg:ml-0 lg:left-3/4 lg:-translate-y-56/ opacity-0">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
+                <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> 
+                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                     <img class="flex-shrink-0 h-6 w-6" src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                    <div class="ml-2">
-                      <p class="text-base font-medium">
+                  <div class="ml-2">
+                      <p class="text-base font-medium text-moien-blue">
                         Français
                       </p>
                     </div>
@@ -186,31 +209,15 @@
                   <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                     <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
                     <div class="ml-2">
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-moien-blue">
                         Anglais
-                      </p>
-                    </div>
-                  </a>
-                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                    <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                    <div class="ml-2">
-                      <p class="text-base font-medium">
-                        Allemand
-                      </p>
-                    </div>
-                  </a>
-                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                    <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                    <div class="ml-2">
-                      <p class="text-base font-medium">
-                        Dutch
                       </p>
                     </div>
                   </a>
                 </div>
             </div>
-          </div> -->
-          </div>
+            </div>
+            </div>
       </div>
     </footer>
     <script src="js/main.js"></script>
