@@ -73,6 +73,7 @@ module.exports = {
       'padding-y-card-mobile': '0.67%',
       'margin-x-card-mobile': '8.11%',
       'margin-t-card-mobile': '1.07%',
+      //inside card margin
       'margin-header-parag': '1%',
       'margin-header-parag-mobile': '0.57%',
       //card1 pos
