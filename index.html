@@ -11,7 +11,7 @@
 <body>
     <section class="flex flex-col h-screen bg-moien-pink text-moien-blue">
     <Header> 
-        <div class="flex justify-between items-center py-6 px-padding-page-x sm:py-8 lg:py-10 bg-moien-lightblue"> 
+        <div class="flex justify-between items-center py-6 px-padding-page-x sm:py-8 lg:py-10"> 
             <div>
               <a href="#">
                 <svg class="h-20 w-52 hover:text-moien-gray" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -41,7 +41,7 @@
                 </svg>
               </a>
             </div>
-            <div class="flex justify-end bg-indigo-100 h-full w-full">
+            <div class="flex justify-end h-full w-full">
               <img class="" src="assets/img/nuage.png" alt="" srcset="">
             </div>
             <div class="relative">
@@ -81,30 +81,32 @@
           </div>
     </Header>
     <!-- Hero section --> 
-    <section class="flex flex-grow flex-col items-stretch lg:flex-row phone:px-2 sm:px-0 "> 
+    <section class="flex flex-grow flex-col items-stretch ipadPro:flex-row phone:px-2 sm:px-0"> 
        <div class="text-moien-blue text-left phone:ml-margin-hero-left phone:mt-margin-hero-top">
-            <h2 class="text-first-header-mobile phone:text-first-header text-center phone:text-left font-Over-SemiBold mb-5">Louez, sous-louez,<br class="hidden sm:block"> vivez<br class="block phone:hidden"> et voyagez !<h2>
-                <p class="text-paragraph-mobile phone:text-paragraph text-center phone:text-left font-Over-Reg">Découvrez une nouvelle<br class="block sm:hidden"> expérience locative<br class="hidden sm:block"> et simplifiez<br class="block sm:hidden"> vos démarches avec Moïen.</p>
+            <h2 class="text-first-header-mobile phone:text-first-header text-center phone:text-left font-Over-SemiBold mb-5">
+                Louez, sous-louez,<br class="hidden phone:block"> vivez<br class="block phone:hidden">
+                et voyagez !
+                <h2>
+                <p class="text-paragraph-mobile phone:text-paragraph text-center phone:text-left font-Over-Reg">
+                Découvrez une nouvelle<br class="block sm:hidden"> 
+                expérience locative<br class="hidden sm:block"> 
+                et simplifiez<br class="block sm:hidden"> vos démarches avec Moïen.
+              </p>
         </div>
         <div class="relative flex-grow mt-6 xl:mt-0">
           <img class="absolute bottom-0 left-0 " src="assets/img/plant-bleu.png" alt="" srcset="">
           <img class="absolute h-full bottom-0 sm:left-6" src="assets/img/iPhone X Light.png" alt="" srcset="">
-          
         </div>
     </section>
 </section>
     <!-- first arg -->
-    <section class="flex flex-col-reverse justify-end sm:flex-row sm:justify-start items-center bg-moien-lightblue">
-       <div class="w-exp-width h-exp-height mt-4 sm:mr-mr-exp-img sm:mt-mt-exp-img sm:ml-ml-exp-img">
+    <section class="flex flex-col-reverse justify-end sm:flex-row sm:justify-start items-center sm:items-end bg-moien-lightblue">
+       <div class="w-exp-width h-exp-height mt-4 sm:mr-mr-exp-img sm:ml-ml-exp-img">
          <img src="assets/img/experience.png" alt="" >
        </div>
-        <div 
-        class="rounded-lg bg-white shadow-lg pt-4 pb-6 mx-margin-x-card-mobile 
-                md:mx-0 md:pt-6 mt-4 text-left sm:mb-margin-bot-card1 md:mr-margin-cards 
-                sm:mt-margin-top-card1 px-padding-x-card-mobile sm:px-padding-x-card 
-                py-padding-y-card-mobile sm:padding-y-card">
-               <!-- rounded-lg bg-white shadow-lg pt-4 pb-6 phone:pt-6 mt-4 text-left sm:ml-margin-cards sm:mt-32 px-padding-x-card-mobile phone:px-padding-x-card -->
-            <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+       <div class="flex relative sm:mb-margin-bot-card1 md:mr-margin-cards sm:mt-7 mx-margin-x-card-mobile md:mx-0  mt-4 sm:pr-20 sm:pt-20">
+        <div class="z-10 rounded-lg bg-white shadow-lg pt-4 md:pt-6 pb-6 text-left  px-padding-x-card-mobile sm:px-padding-x-card py-padding-y-card-mobile sm:padding-y-card">
+           <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
               Une seule application pour<br class="hidden xl:block"> tous vos besoins
              <h2>
                 <p class="font-Over-Reg font-normal text-paragraph-mobile phone:text-paragraph text-moien-gray mb-8 text-center phone:text-left">
@@ -115,18 +117,21 @@
                   Bénéficiez des avantages d’une sous-<br class="block phone:hidden"> location encadrée, en<br class="hidden xl:block"> 
                   tant que<br class="block phone:hidden"> propriétaire et locataire.
                 </p>
-        </div> 
+        </div>
+        <img class="hidden sm:block sm:absolute top-0 right-0" src="assets/img/plant-rouge.png" alt="" srcset="">
+      </div> 
     </section>
     <!-- 2nd arg --> 
-    <section class="flex bg-white"> 
-        <div class="rounded-lg bg-white shadow-lg pt-4 pb-6 phone:pt-6 mt-4 text-left sm:ml-margin-cards sm:mt-margin-top-card2 px-padding-x-card-mobile phone:px-padding-x-card">
+    <section class="flex-row xl:relative bg-moien-lightblue w-full pb-pb-scd-section"> 
+      <div class="flex w-full">
+        <div class="z-10 rounded-lg bg-white shadow-lg pt-4 pb-6 mx-margin-x-card-mobile md:pt-6 mt-4 text-left sm:ml-margin-cards sm:mt-margin-top-card2 px-padding-x-card-mobile phone:px-padding-x-card">
             <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
-              Votre parcours locatif géré <br class="hidden sm:block">de A à Z
+              Votre parcours locatif géré <br>de A à Z
               <h2>
                 <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray text-center phone:text-left">
                   Simplifiez vos démarches en tant que locataire,<br class="hidden sm:block">propriétaire ou professionnel de l’immobilier.
                 </p>
-                <ul class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray mt-8 phone:mt-12">
+                <ul class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray mt-8 phone:mt-12"> 
                       <li class="flex items-stretch">
                         <div class="mt-1 mr-2">
                           <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -177,31 +182,32 @@
                       </li>
                   </ul> 
         </div>
-        <div class="bg-indigo-100 w-parcours-width h-parcours-height mt-4 sm:mr-mr-parc-img sm:mt-mt-parc-img">
-          <img class="" src="assets/img/parcours.png" alt="" >
         </div>
+        <img class="xl:absolute m-auto xl:mr-mr-parc-img xl:bottom-0 xl:right-0" src="assets/img/parcours.png" alt="" >
+      
     </section>
     
     <!-- 3rd arg -->
-    <!-- <section class="flex justify-end bg-moien-lightblue px-8 pb-6 sm:px-0 sm:pb-0"> 
-        <div class="rounded-lg bg-white shadow-lg pt-4 pb-8 phone:pt-6 phone:pb-11 px-padding-x-card-mobile phone:px-padding-x-card  mt-4 mb-10 sm:mr-margin-cards sm:mt-36 sm:mb-44">
-            <h2 class="mb-margin-header-parag-mobile phone:mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
-              Un impact sur l’environnement<br class="hidden sm:block"> limité
-            </h2>
-                <p class="font-Over-Reg text-center phone:text-left text-paragraph-mobile phone:text-paragraph text-moien-gray">
-                  Voyagez responsable : pour les locations courte durée, les<br class="hidden phone:block"> frais de service sont calculés en fonction de la distance<br class="hidden phone:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden phone:block"> sont compensées (un voyage = un arbre planté).</p>
-        </div> 
-    </section> -->
-    <!-- break point-545px -->
-    <!-- <section class="flex justify-end bg-moien-lightblue px-8 pb-6 sm:px-0 sm:pb-0"> 
-      <div class="rounded-lg bg-white shadow-lg pt-4 pb-8 px-padding-x-card-mobile small-device:px-padding-x-card small-device:pt-6 small-device:pb-11 mt-4 mb-10 sm:mr-margin-cards sm:mt-36 sm:mb-44">
-          <h2 class="mb-4 small-device:mb-8 text-center small-device:text-left text-second-header-mobile small-device:text-second-header text-moien-blue font-Over-SemiBold">
-            Un impact sur l’environnement<br class="hidden sm:block"> limité<h2>
-              <p class="font-Over-Reg text-center small-device:text-left text-paragraph-mobile small-device:text-paragraph text-moien-gray">
-                Voyagez responsable : pour les locations courte durée, les<br class="hidden small-device:block"> frais de service sont calculés en fonction de la distance<br class="hidden phone:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden phone:block"> sont compensées (un voyage = un arbre planté).</p>
+  
+    <section class="flex justify-center items-center xl:justify-end sm:flex-row sm:justify-start bg-moien-lightblue">
+      <div class="hidden sm:block w-exp-width h-exp-height mt-4 sm:mr-mr-exp-img sm:mt-mt-exp-img sm:ml-ml-exp-img">
+        <img src="assets/img/experience.png" alt="" >
       </div>
-  </section> -->
-    
+       <div class="rounded-lg bg-white shadow-lg pt-4 pb-6 mx-margin-x-card-mobile 
+               md:mx-0 md:pt-6 mt-4 text-left sm:mb-margin-bot-card1 md:mr-margin-cards 
+               sm:mt-margin-top-card1 px-padding-x-card-mobile sm:px-padding-x-card 
+               py-padding-y-card-mobile sm:padding-y-card">
+              <!-- rounded-lg bg-white shadow-lg pt-4 pb-6 phone:pt-6 mt-4 text-left sm:ml-margin-cards sm:mt-32 px-padding-x-card-mobile phone:px-padding-x-card -->
+           <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+            Un impact sur l’environnement<br class="hidden sm:block"> limité
+            <h2>
+               <p class="font-Over-Reg font-normal text-paragraph-mobile phone:text-paragraph text-moien-gray mb-8 text-center phone:text-left">
+                Voyagez responsable : pour les locations courte durée, les<br class="hidden phone:block"> frais de service sont calculés en fonction de la distance<br class="hidden phone:block"> parcourue. Les émissions de CO2 générées par les voyages<br class="hidden phone:block"> sont compensées (un voyage = un arbre planté).
+               </p>
+       </div> 
+   </section>
+ 
+    <!-- Final Part -->
     <section 
     class="relative flex flex-col justify-center text-center items-stretch sm:items-center bg-moien-pink pt-12"> 
       <!-- <div class="flex absolute px-6 phone:px-8 justify-center items-stretch w-full h-16 -top-6"> -->

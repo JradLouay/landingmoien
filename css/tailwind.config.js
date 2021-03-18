@@ -41,21 +41,24 @@ module.exports = {
     extend: {
       width: {
        'exp-width': '12.53%',
-       'parcours-width': '53.87%',
+       'parcours-width': '775.8px',
        'bgrass-width': '6.32%',
        'logo-w':'15.4%',
+       'logo-w-mobile':'46.67%',
        'Ix-w':'18.06%',
        'Ix-w-mobile':'62.96%',
                 },
       height: {
        'exp-height': '20.83%',
-       'parcours-height': '18.4%',
+       'parcours-height': '495px',
        'bgrass-height': '12.83%',
        'logo-h':'2.71%',
+       'logo-h-mobile':'2.15%',
        'Ix-h':'16.28%',
        'Ix-h-mobile':'62.96%',
                 },
     screens: {
+      'ipadPro': '1025px',
       'phone': '423px',
       'small-device': '545px',
     },
@@ -77,12 +80,13 @@ module.exports = {
       'margin-header-parag': '1%',
       'margin-header-parag-mobile': '0.57%',
       //card1 pos
-      'margin-top-card1': '3.78%',
+      'margin-top-card1': '1%',
       'margin-bot-card1': '4.57%',
       //card2 pos
       'margin-top-card2': '3.78%',
       //padding 2nd section: 
       'pt-scd-section': '2.08%',
+      'pb-scd-section': '6.44%',
       //padding 3rd section: 
       'pt-thd-section': '1.08%',
       'pb-thd-section': '2.19%',
@@ -93,6 +97,9 @@ module.exports = {
       //img-parcours margin
       'mt-parc-img': '9.25%',
       'mr-parc-img': '9.5%',
+      //paddding red-plant
+      'pr-red-plant': '5.07%',
+      'pt-red-plant': '2.78%',
     },
       width: { 
         'input': '545px',
