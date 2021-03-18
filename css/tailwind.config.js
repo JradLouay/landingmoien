@@ -96,7 +96,7 @@ module.exports = {
       'mr-exp-img': '3.08%',
       //img-parcours margin
       'mt-parc-img': '9.25%',
-      'mr-parc-img': '9.5%',
+      'mr-parc-img': '6.48%',
       //paddding red-plant
       'pr-red-plant': '5.07%',
       'pt-red-plant': '2.78%',
