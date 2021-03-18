@@ -70,7 +70,7 @@ module.exports = {
       'margin-hero-x-mobile': '8.4%',
       //card
       'padding-page-x': '4.5%',
-      'padding-x-card': '2.2%',
+      'padding-x-card': '2.35%',
       'padding-x-card-mobile': '4.27%',
       'padding-y-card': '1.5%',
       'padding-y-card-mobile': '0.67%',
