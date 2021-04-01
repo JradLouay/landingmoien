@@ -63,7 +63,7 @@ module.exports = {
       'small-device': '545px',
     },
     spacing: {
-      
+      'margin-right-cloud':'18.53%',
       'margin-cards': '15.45%', // margin footer cards + mobile 
       'margin-hero-left': '11.25%',
       'margin-hero-top': '4.75%',
@@ -84,6 +84,8 @@ module.exports = {
       'margin-bot-card1': '4.57%',
       //card2 pos
       'margin-top-card2': '3.78%',
+      //card3 pos
+      'margin-bot-card3': '2.20%',
       //padding 2nd section: 
       'pt-scd-section': '2.08%',
       'pb-scd-section': '6.44%',
