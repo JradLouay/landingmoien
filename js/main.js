@@ -28,3 +28,6 @@ window.onclick = function (event) {
     }
   }
 };
+focusMethod = function getFocus() {
+  document.getElementById("add-Email").focus();
+}
