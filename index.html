@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/dist/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="css/typography-font/style.css">
+    <link rel="icon" type="image/svg" href="assets/img/moien-rgb-blue.png" />
     <title>Moïen</title>
 </head>
 <body>
@@ -57,23 +58,37 @@
                 <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 lg:ml-0 lg:left-3/4 lg:-translate-x-3/ opacity-0">
                     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
                       <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> <!-- gap between rows and sm:gap-8 sm:p-8 columns grid layout -->
-                        <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                          <img class="flex-shrink-0 h-6 w-6" src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                          <!-- <svg class="flex-shrink-0 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg> -->
+                        <a onclick="chooseLanguage('french')" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                          <!-- <img class="flex-shrink-0 h-6 w-6" src="assets/country/european-union.svg" alt="French Flag"> -->
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="h-6 w-6">
+                            <clipPath id="s">
+                              <path d="M0,0 v30 h60 v-30 z"/>
+                            </clipPath>
+                            <clipPath id="t">
+                              <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                            </clipPath>
+                            <g clip-path="url(#s)">
+                              <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                              <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                              <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                              <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                            </g>
+                            </svg> 
                           <div class="ml-2">
                             <p class="text-base font-medium text-moien-blue">
                               Français
                             </p>
                           </div>
                         </a>
-                        <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                        <!-- <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
                           <div class="ml-2">
                             <p class="text-base font-medium text-moien-blue">
                               Anglais
                             </p>
                           </div>
-                        </a>
+                        </a> -->
                       </div>
                   </div>
                 </div>
@@ -205,7 +220,7 @@
         <img src="assets/img/experience.png" alt="" >
       </div>
       <!-- <div class="flex sm:mb-margin-bot-card1 md:mr-margin-cards sm:mt-7 mx-margin-x-card-mobile md:mx-0  mt-4 sm:pr-20 sm:pt-20"> -->
-       <div class=" sm:mb-margin-bot-card1 md:mr-margin-cards sm:mt-7 mx-margin-x-card-mobile md:mx-0 mt-4 rounded-lg bg-white shadow-lg px-4 sm:px-8 py-6 sm:py-9">
+       <div class="md:mr-margin-cards sm:mt-7 mx-margin-x-card-mobile mb-9 sm:mb-margin-bot-card1 md:mx-0 mt-4 rounded-lg bg-white shadow-lg px-4 sm:px-8 py-6 sm:py-9">
           <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
             Un impact sur l’environnement<br class="hidden 2xl:block"> limité
             <h2>
@@ -260,17 +275,18 @@
       <h2 class="mb-6 text-second-header-mobile phone:text-bottom-header text-moien-blue font-Over-SemiBold ">Restez informés !</h2>
         <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-blue">Inscrivez-vous pour recevoir nos <br class="block small-device:hidden"> dernières actualités</p>
         <div class="sm:flex px-6 phone:px-8 justify-center items-stretch"> 
-          <div class="flex justify-center mt-9 mb-16 h-10 font-Over-Reg text-placeholder text-moien-blue bg-moien-pink border-b border-moien-blue">
-                    <input type="text" name="company_website" id="add-Email" 
+          <form id="form" class="flex justify-center mt-9 mb-16 h-10 font-Over-Reg text-placeholder text-moien-blue bg-moien-pink border-b border-moien-blue">
+                    <input id="emailInput" type="text"   
                     class="flex-1 block w-input focus:outline-none bg-moien-pink" placeholder="Entrez votre adresse email">
-                    <a onclick="toggleModal()" class="inline-flex items-center w-4">
+                   
+                    <button type="submit" class="focus:outline-none inline-flex items-center w-4">
                         <img src="assets/arrow-thin-right.svg">
-                    </a>  
-                </div>
+                    </button> 
+                </form>
           </div>
     </section>
     <!-- modal  -->
-<div id="container" class="hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+<div id="modalContainer" class="hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
   <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
     <!--
       Background overlay, show/hide based on modal state.
@@ -297,34 +313,29 @@
         From: "opacity-100 translate-y-0 sm:scale-100"
         To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     -->
-    <div id="modal" class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95 sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-      <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-        <div class="sm:flex sm:items-start">
-          <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full sm:mx-0 sm:h-10 sm:w-10">
-            <img src="assets/img/moien-light-grayish-cyan.png" alt="moien-icon" srcset="">
-          </div>
-          <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-            <h3 class="text-lg leading-6 font-medium" id="modal-title">
-              Email enregistrer
-            </h3>
-            <div class="mt-2">
-              <p class="text-sm text-moien-gray">
-                Merci, votre adresse email est bien
-                prise en compte et nous vous
-                tiendrons informé(e) des actualités de
-                Moïen. 
+    <div id="modalContent" class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95 sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+      <div class="flex flex-col items-center px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+        <div class="sm:flex sm:items-start mb-8">
+          <div class="mt-3 px-4 text-center sm:mt-0 ">
+            <div class="relative mt-2">
+              <img class="absolute -left-4 -top-2" src="./assets/img/oval.png" alt="" srcset="">
+              <p class=" relative z-10 text-sm text-moien-blue Over-SemiBold">
+                Merci, votre adresse email est bien prise en compte et nous vous tiendrons informé(e) des actualités de Moïen. 
               </p>
             </div>
           </div>
         </div>
+
+        <img class="h-52 w-56" src="assets/img/girl_walking.png"/>
       </div>
-      <div class="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-        <button onclick="toggleModal()" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-moien-blue text-base font-medium text-white focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+      
+      <div class="px-4 mb-6 sm:px-6 flex flex-row justify-center">
+        <!-- <button onclick="toggleModal()" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-moien-blue text-base font-medium text-white focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+          Fermer
+        </button> -->
+        <button onClick="toggleModal()" class="bg-transparent py-2 px-16  border border-moien-blue rounded hover:bg-moien-blue hover:text-moien-pink hover:border-transparent" onclick=""> 
           Fermer
         </button>
-        <!-- <button class="bg-transparent py-2 px-4 border border-moien-blue rounded hover:bg-moien-blue hover:text-moien-pink hover:border-transparent" onclick="focusMethod()"> 
-          Inscrivez-vous maintenant
-        </button> -->
       </div>
     </div>
   </div>
@@ -332,8 +343,8 @@
     <footer> 
       <div class="flex justify-center small-device:justify-between items-center small-device:px-padding-page-x bg-moien-blue text-white text-center font-Over-Reg py-6">
         <p class="leading-9">
-          <a class="hover:text-moien-gray" href=""><u>Mentions légales</u></a> - <a class="hover:text-moien-gray" href="">
-          <u>contact@moïen.com</u></a> - <br class="block small-device:hidden">© 2021 Moïen
+          <a class="hover:text-moien-gray"><u>Mentions légales</u></a> - <a class="hover:text-moien-gray">
+          <u>contact@moïen.com</u></a> <span class="hidden sm:inline" >-</span> <br class="block small-device:hidden">© 2021 Moïen
         </p>
         <div class="relative hidden small-device:block">
             <button onclick="toggleList('listItem2')" type="button" class="group inline-flex items-center text-select-text font-Over-Reg font-light font-medium hover:text-gray-500 focus:outline-none focus:border-b-2 focus:ring-offset-2 focus:ring-moien-pink" aria-expanded="false">
@@ -345,7 +356,7 @@
             <div id="listItem2" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-24 -translate-y-32 lg:ml-0 lg:left-3/4 lg:-translate-y-56/ opacity-0">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
                 <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> 
-                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-grey-200">
                     <img class="flex-shrink-0 h-6 w-6" src="assets/country/european-union.svg" alt="Kiwi standing on oval">
                   <div class="ml-2">
                       <p class="text-base font-medium text-moien-blue">
@@ -367,6 +378,6 @@
             </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

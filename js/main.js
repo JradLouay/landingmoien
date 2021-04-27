@@ -1,6 +1,10 @@
 let openMenu = false;
 let openModal = false;
-function toggleList() {
+
+const emailForm = document.getElementById("form");
+const emailInput = document.getElementById("emailInput");
+
+const toggleList = () => {
   !this.openMenu
     ? (document
         .getElementById("listItem1")
@@ -13,24 +17,56 @@ function toggleList() {
         .getElementById("listItem1")
         .classList.add("opacity-0", "translate-y-1"),
       (this.openMenu = !this.openMenu));
-}
+};
+const chooseLanguage = (language) => {
+  toggleList();
+};
+const focusMethod = () => {
+  document.getElementById("emailInput").focus();
+};
 
-function toggleModal() {
+const toggleModal = () => {
   if (!this.openMenu) {
-    document.getElementById("container").classList.remove("hidden");
+    document.getElementById("modalContainer").classList.remove("hidden");
     document.getElementById("modalBg").classList.remove("opacity-0");
     document.getElementById("modalBg").classList.add("opacity-100");
     document
-      .getElementById("modal")
-      .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      .getElementById("modalContent")
+      .classList.remove(
+        "opacity-0",
+        "translate-y-4",
+        "sm:translate-y-0",
+        "sm:scale-95"
+      );
+    document
+      .getElementById("modalContent")
+      .classList.add(
+        "transation",
+        "ease-out",
+        "duration-300",
+        "opacity-100",
+        "translate-y-0",
+        "sm:scale-100"
+      );
     this.openMenu = !this.openMenu;
   } else {
+    toggleList;
     document
-      .getElementById("modal")
-      .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
-      document
-      .getElementById("modal")
+      .getElementById("modalContent")
+      .classList.remove(
+        "transation",
+        "ease-out",
+        "duration-300",
+        "opacity-100",
+        "translate-y-0",
+        "sm:scale-100"
+      );
+    document
+      .getElementById("modalContent")
       .classList.add(
+        "transation",
+        "ease-in",
+        "duration-300",
         "opacity-0",
         "translate-y-4",
         "sm:translate-y-0",
@@ -38,46 +74,62 @@ function toggleModal() {
       );
     document.getElementById("modalBg").classList.remove("opacity-100");
     document.getElementById("modalBg").classList.add("opacity-0");
-    document.getElementById("container").classList.add("hidden");
-  
+    document.getElementById("modalContainer").classList.add("hidden");
+
     this.openMenu = !this.openMenu;
   }
-  // !this.openMenu
-  //   ? (document.getElementById("container").classList.remove("hidden"),
-  //     document
-  //       .getElementById("modal")
-  //       .classList.add("opacity-100", "translate-y-0", "sm:scale-100"),
-  //     (this.openMenu = !this.openMenu))
-  //   : (document
-  //       .getElementById("modal")
-  //       .classList.remove("opacity-100", "translate-y-0", "sm:scale-100"),
-  //     document.getElementById("container").classList.add("hidden"),
-  //     document
-  //       .getElementById("modal")
-  //       .classList.add(
-  //         "opacity-0",
-  //         "translate-y-4",
-  //         "sm:translate-y-0",
-  //         "sm:scale-95"
-  //       ),
-  //     (this.openMenu = !this.openMenu));
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (
-    !event.target.matches("listItem1") ||
-    !event.target.matches("listItem2")
-  ) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
+};
+const sendEmail = () => {
+  const dataToSend = JSON.stringify({
+    email: "hey@mail.com",
+    password: "101010",
+  });
+  let dataReceived = "";
+  fetch("", {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: dataToSend,
+  })
+    .then((resp) => {
+      if (resp.status === 200) {
+        return resp.json();
+      } else {
+        console.log("Status: " + resp.status);
+        return Promise.reject("server");
       }
+    })
+    .then((dataJson) => {
+      dataReceived = JSON.parse(dataJson);
+    })
+    .catch((err) => {
+      if (err === "server") return;
+      console.log(err);
+    });
+};
+const validateEmail = (email) => {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+const getEmail = (event) => {
+  const email = event.target.elements.emailInput.value;
+
+  if (email.length === 0) {
+    alert("email field is Empty");
+    event.preventDefault();
+  } else {
+    if (validateEmail(email)) {
+      console.log("OK");
+      toggleModal();
+    } else {
+      alert("email invalid");
     }
   }
+  event.preventDefault();
 };
-focusMethod = function getFocus() {
-  document.getElementById("add-Email").focus();
+
+window.onclick = (event) => {
+  console.log(event.target.id);
+  if (event.target.id === "modalBg") toggleModal();
 };
+
+emailForm.addEventListener("submit", getEmail);
