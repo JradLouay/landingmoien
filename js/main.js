@@ -79,15 +79,18 @@ const toggleModal = () => {
     this.openMenu = !this.openMenu;
   }
 };
-const sendEmail = () => {
+const sendEmail = (email) => {
   const dataToSend = JSON.stringify({
-    email: "hey@mail.com",
-    password: "101010",
+    email: email,
   });
   let dataReceived = "";
-  fetch("", {
+  // console.log(dataToSend);
+  fetch(" http://moien.ersys-solutions.com:7035/API/customer/prospect", {
     method: "post",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
     body: dataToSend,
   })
     .then((resp) => {
@@ -120,6 +123,7 @@ const getEmail = (event) => {
     if (validateEmail(email)) {
       console.log("OK");
       toggleModal();
+      // sendEmail(email);
     } else {
       alert("email invalid");
     }
