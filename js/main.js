@@ -84,7 +84,6 @@ const sendEmail = (email) => {
     email: email,
   });
   let dataReceived = "";
-  // console.log(dataToSend);
   fetch(" http://moien.ersys-solutions.com:7035/API/customer/prospect", {
     method: "post",
     headers: {
@@ -121,9 +120,8 @@ const getEmail = (event) => {
     event.preventDefault();
   } else {
     if (validateEmail(email)) {
-      console.log("OK");
       toggleModal();
-      // sendEmail(email);
+      sendEmail(email);
     } else {
       alert("email invalid");
     }
