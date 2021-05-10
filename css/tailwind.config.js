@@ -2,6 +2,7 @@ module.exports = {
   purge: ["./index.html", "./js/main"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+   
     fontFamily: {
       "Over-Reg": ["Overpass-Regular"],
       "Over-SemiBold": ["Overpass-SemiBold"],
@@ -64,6 +65,9 @@ module.exports = {
       ],
     },
     extend: {
+      inset: {
+        '-1/5': '-21%',
+       },
       spacing: {
         '4.5': '4.5rem',
       },
