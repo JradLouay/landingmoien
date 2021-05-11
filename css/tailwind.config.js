@@ -94,9 +94,13 @@ module.exports = {
         "Ix-h-mobile": "62.96%",
       },
       screens: {
-        ipadPro: "1025px",
-        phone: "423px",
+        "ipadPro": "1025px",
+        "phone": "423px",
         "small-device": "545px",
+        'customx': {'raw': '(max-height: 812px),(max-width:375px)'},
+        'custom7': {'raw': '(max-height: 667px),(max-width:375px)'},
+        'custom7+': {'raw': '(max-height: 736px),(max-width:375px)'}
+
       },
       spacing: {
         "margin-right-cloud": "18.53%",
@@ -105,6 +109,7 @@ module.exports = {
         "margin-hero-top": "4.75%",
         "margin-hero-x-mobile": "8.4%",
         //card
+        "margin-left-hero-img":"11.7%",
         "padding-page-x": "4.5%",
         "padding-x-card": "2.35%",
         "padding-x-card-mobile": "4.27%",
@@ -141,6 +146,10 @@ module.exports = {
       },
       width: {
         input: "545px",
+      },
+      height: {
+        "phoneHeightMobile": "613px",
+        "phoneHeightDesktop" : "669px"
       },
       colors: {
         "moien-pink": "#FEEDEC",
