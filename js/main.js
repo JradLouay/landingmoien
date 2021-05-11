@@ -94,9 +94,11 @@ const sendEmail = (email) => {
   })
     .then((resp) => {
       if (resp.status === 200) {
+        // toggleModal(); open modal !!!!
         return resp.json();
       } else {
         console.log("Status: " + resp.status);
+        alert("Internet Connexion lost !!!");
         return Promise.reject("server");
       }
     })
@@ -120,7 +122,7 @@ const getEmail = (event) => {
     event.preventDefault();
   } else {
     if (validateEmail(email)) {
-      toggleModal();
+      // toggleModal();
       sendEmail(email);
     } else {
       alert("email invalid");
