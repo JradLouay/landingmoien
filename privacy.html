@@ -1,194 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/dist/tailwind.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/typography-font/style.css">
-    <link rel="icon" type="image/svg" href="assets/img/moien-rgb-blue.png" />
-    <title>Moïen</title>
-</head>
-<body>
-    <section class="flex flex-col  bg-moien-pink text-moien-blue">
-    <Header> 
-        <div class="flex justify-between items-center py-6 mb-10 px-padding-page-x sm:py-8 lg:py-10"> 
-            <div>
-              <a href="#">
-                <svg class="h-20 w-52 hover:text-moien-gray" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 600 226" style="enable-background:new 0 0 600 226;" xml:space="preserve" fill="currentColor" aria-hidden="true">
-                <g>
-                  <circle style="fill:#CCF8E9;" cx="113" cy="113" r="93"/>
-                  <g>
-                    <path style="fill:#010D3C;" d="M152.5,118c0,23.2-16.1,40.4-38.8,40.4S74.9,141.2,74.9,118h15.1c0,17.7,11,27.1,23.6,27.1
-                      s23.6-9.5,23.6-27.1H152.5z"/>
-                    <rect x="108" y="80.5" style="fill:#010D3C;" width="43.4" height="14.7"/>
-                    <path style="fill:#010D3C;" d="M74.1,88.3c0-4.4,3.6-8,8-8c4.4,0,7.9,3.6,7.9,8s-3.4,7.9-7.9,7.9C77.6,96.2,74.1,92.8,74.1,88.3z"/>
-                  </g>
-                  <g>
-                    <path style="fill:#010D3C;" d="M289.3,110.1V158h-14.6v-48.2c0-8.2-2.8-17.9-16.1-17.9c-9.7,0-16.7,7.9-16.7,18.8V158h-14.4v-48.2
-                      c0-11.5-5.7-17.9-16-17.9c-9.6,0-16.9,8.1-16.9,18.8V158H180V80.2h14.2v6.4c4.9-5.3,11.6-8.3,19.1-8.3c10.1,0,18.2,4.1,23.4,12
-                      c5.3-7.8,13.6-12,23.6-12C278.1,78.3,289.3,90.5,289.3,110.1z M380.7,119.3c0,22.7-17.2,40.4-39.1,40.4s-39.1-17.8-39.1-40.4
-                      c0-23,17.2-41,39.1-41S380.7,96.3,380.7,119.3z M366.1,119.3c0-15.1-11-27.4-24.5-27.4c-13.4,0-24.3,12.3-24.3,27.4
-                      c0,14.8,10.9,26.8,24.3,26.8C355.2,146.2,366.1,134.1,366.1,119.3z M394.8,158h14.6V80.2h-14.6V158z M489.1,89.6
-                      c8.1,8.1,12.5,19.8,12.5,32.8l0,1.1h-63.4c1.7,11.5,10.6,22.9,24.9,22.9c10,0,17.4-4.6,21.5-13.3l0.3-0.6h15.3l-0.5,1.4
-                      c-5.4,16.5-18.8,26-36.7,26c-22.3,0-39.8-17.8-39.8-40.6c0-22.5,17.5-40.9,39.1-40.9C472.4,78.3,481.9,82.3,489.1,89.6z
-                      M439.1,110.2h46.3c-3.3-10.9-12.6-18.4-23-18.4C450.6,91.7,442,100.8,439.1,110.2z M549.9,78.3c-8.2,0-15.6,3-21,8.4v-6.5h-14.2
-                      V158h14.6v-47.3c0-10.9,7.9-18.8,18.8-18.8c10.8,0,17.4,7.3,17.4,19.1v47H580v-46.6C580,91.3,568.2,78.3,549.9,78.3z M381.5,63.1
-                      c0,4.4,3.4,7.9,7.9,7.9c4.4,0,8-3.4,8-7.9c0-4.4-3.6-8-8-8C384.9,55.1,381.5,58.7,381.5,63.1z M406.8,63.1c0,4.4,3.4,7.9,7.9,7.9
-                      c4.4,0,8-3.4,8-7.9c0-4.4-3.6-8-8-8C410.2,55.1,406.8,58.7,406.8,63.1z"/>
-                  </g>
-                </g>
-                </svg>
-              </a>
-            </div>
-            <div class="flex justify-end h-full w-full mr-margin-right-cloud">
-              <img class="" src="assets/img/nuage.png" alt="" srcset="">
-            </div>
-            <div class="relative">
-                <button onclick="toggleList('listItem1')" type="button" 
-                    class="group inline-flex items-center 
-                    text-select-text font-Over-Reg font-light hover:text-moien-gray 
-                    focus:outline-none" aria-expanded="false">
-                      <span>FR</span>
-                      <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/dist/tailwind.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/typography-font/style.css">
+      <link rel="icon" type="image/svg" href="assets/img/moien-rgb-blue.png" />
+      <title>Moïen</title>
+   </head>
+   <body>
+      <section class="flex flex-col bg-moien-pink text-moien-blue pb-10">
+         <Header>
+            <div class="flex justify-between items-center py-6 mb-10 px-padding-page-x sm:py-8 lg:py-10">
+               <div>
+                  <a href="#">
+                     <svg class="h-20 w-52 hover:text-moien-gray" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 600 226" style="enable-background:new 0 0 600 226;" xml:space="preserve" fill="currentColor" aria-hidden="true">
+                        <g>
+                           <circle style="fill:#CCF8E9;" cx="113" cy="113" r="93"/>
+                           <g>
+                              <path style="fill:#010D3C;" d="M152.5,118c0,23.2-16.1,40.4-38.8,40.4S74.9,141.2,74.9,118h15.1c0,17.7,11,27.1,23.6,27.1
+                                 s23.6-9.5,23.6-27.1H152.5z"/>
+                              <rect x="108" y="80.5" style="fill:#010D3C;" width="43.4" height="14.7"/>
+                              <path style="fill:#010D3C;" d="M74.1,88.3c0-4.4,3.6-8,8-8c4.4,0,7.9,3.6,7.9,8s-3.4,7.9-7.9,7.9C77.6,96.2,74.1,92.8,74.1,88.3z"/>
+                           </g>
+                           <g>
+                              <path style="fill:#010D3C;" d="M289.3,110.1V158h-14.6v-48.2c0-8.2-2.8-17.9-16.1-17.9c-9.7,0-16.7,7.9-16.7,18.8V158h-14.4v-48.2
+                                 c0-11.5-5.7-17.9-16-17.9c-9.6,0-16.9,8.1-16.9,18.8V158H180V80.2h14.2v6.4c4.9-5.3,11.6-8.3,19.1-8.3c10.1,0,18.2,4.1,23.4,12
+                                 c5.3-7.8,13.6-12,23.6-12C278.1,78.3,289.3,90.5,289.3,110.1z M380.7,119.3c0,22.7-17.2,40.4-39.1,40.4s-39.1-17.8-39.1-40.4
+                                 c0-23,17.2-41,39.1-41S380.7,96.3,380.7,119.3z M366.1,119.3c0-15.1-11-27.4-24.5-27.4c-13.4,0-24.3,12.3-24.3,27.4
+                                 c0,14.8,10.9,26.8,24.3,26.8C355.2,146.2,366.1,134.1,366.1,119.3z M394.8,158h14.6V80.2h-14.6V158z M489.1,89.6
+                                 c8.1,8.1,12.5,19.8,12.5,32.8l0,1.1h-63.4c1.7,11.5,10.6,22.9,24.9,22.9c10,0,17.4-4.6,21.5-13.3l0.3-0.6h15.3l-0.5,1.4
+                                 c-5.4,16.5-18.8,26-36.7,26c-22.3,0-39.8-17.8-39.8-40.6c0-22.5,17.5-40.9,39.1-40.9C472.4,78.3,481.9,82.3,489.1,89.6z
+                                 M439.1,110.2h46.3c-3.3-10.9-12.6-18.4-23-18.4C450.6,91.7,442,100.8,439.1,110.2z M549.9,78.3c-8.2,0-15.6,3-21,8.4v-6.5h-14.2
+                                 V158h14.6v-47.3c0-10.9,7.9-18.8,18.8-18.8c10.8,0,17.4,7.3,17.4,19.1v47H580v-46.6C580,91.3,568.2,78.3,549.9,78.3z M381.5,63.1
+                                 c0,4.4,3.4,7.9,7.9,7.9c4.4,0,8-3.4,8-7.9c0-4.4-3.6-8-8-8C384.9,55.1,381.5,58.7,381.5,63.1z M406.8,63.1c0,4.4,3.4,7.9,7.9,7.9
+                                 c4.4,0,8-3.4,8-7.9c0-4.4-3.6-8-8-8C410.2,55.1,406.8,58.7,406.8,63.1z"/>
+                           </g>
+                        </g>
+                     </svg>
+                  </a>
+               </div>
+               <div class="flex justify-end h-full w-full mr-margin-right-cloud">
+                  <img class="" src="assets/img/nuage.png" alt="" srcset="">
+               </div>
+               <div class="relative">
+                  <button onclick="toggleList('listItem1')" type="button" 
+                     class="group inline-flex items-center 
+                     text-select-text font-Over-Reg font-light hover:text-moien-gray 
+                     focus:outline-none" aria-expanded="false">
+                     <span>FR</span>
+                     <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                      </svg>
-                </button>
-                <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-3/4 lg:ml-0 lg:left-3/4 lg:-translate-x-3/ opacity-0">
-                    <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
-                      <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> <!-- gap between rows and sm:gap-8 sm:p-8 columns grid layout -->
-                        <a onclick="chooseLanguage('french')" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                          <img class="flex-shrink-0 h-6 w-6" src="assets/country/france.svg" alt="French Flag">
-                          <div class="ml-3">
-                            <p class="text-base md:text-lg  font-medium text-moien-blue">
-                              Français
-                            </p>
-                          </div>
-                        </a>
-                      </div>
+                     </svg>
+                  </button>
+                  <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-2/3 lg:ml-0 lg:left-3/4 lg:-translate-x-3/4 opacity-0">
+                     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
+                        <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg">
+                           <a onclick="chooseLanguage('french')" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                              <img class="flex-shrink-0 h-6 w-6" src="assets/country/france.svg" alt="French Flag">
+                              <div class="ml-3">
+                                 <p class="text-base md:text-lg  font-medium text-moien-blue">
+                                    Français
+                                 </p>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
                   </div>
-                </div>
+               </div>
             </div>
-          </div>
-    </Header>
-   
-    <section class="px-4 md:px-40"> 
-     <div class="">
-       <h2 class="text-2xl md:text-3xl font-Over-SemiBold mb-5">
-      Politique de confidentialité de Moien
-       </h2>
-      <p class="text-base md:text-lg  font-Over-Reg">
-        Moien collecte certaines Données personnelles de ses Utilisateurs.
-        Ce document peut être imprimé à des fins de consultation en utilisant la commande d'impression dans les paramètres de tout navigateur.
-    </p>
-    <br>
-    <br>
-    <h2 class="text-2xl md:text-3xl font-Over-SemiBold mb-5">
-      Données personnelles collectées pour les raison suivantes et en utilisant les services suivants:
-      <h2>
-        <div class="flex flex-col justify-around lg:flex-row">
-          <div style="max-width: 550px;"  class="z-10 px-4 sm:px-8 py-6 sm:py-9">
-            <h2 class="mb-4 text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-              Analyses
-              <h2>
-                <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-                 Google Analytics
-                </p>
-                <p class="text-base md:text-lg  text-moien-blue font-Over-Reg">
-                  Données personnelles : Données d'utilisation; traquer
-                 </p>
-        </div>
-        <div style="max-width: 550px;" class="z-10 px-4 sm:px-8 py-6 sm:py-9">
-              <h2 class="mb-4 text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-                Hébergement web et infrastructure de backend 
-                <h2>
-                  <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-                  DigitalOcean
-                  </p>
-                  <p class="text-base md:text-lg  text-moien-blue font-Over-Reg">
-                    Données personnelles : différents types de Données indiquées dans la politique du service
-                  </p>
-          </div>
-     
-        </div>
-        <h2 class="text-2xl md:text-3xl font-Over-SemiBold mb-3">
-          Coordonnées
-          <h2>
-            <div class="flex ">
-              <div class="z-10 flex-1 px-4 sm:px-8 py-6 sm:py-9">
-                <h2 class="mb-4 text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-                  propriétaire et Responsable du traitement
-                  <h2>
-                    <p class="text-base md:text-lg  text-moien-blue font-Over-Reg mb-3">
-                      Crossfunding SARL<br>
-                      9 rue belle-vue,<br>
-                      8013<br>
-                      Pays : luxembourg<br>
+         </Header>
+         <section class="px-4 md:px-24 xl:px-40">
+            <div class="">
+               <h2 class="text-3xl md:text-6xl font-Over-SemiBold mb-5">
+                  Politique de confidentialité de Moien
+               </h2>
+               <p class="text-base md:text-lg  font-Over-Reg">
+                  Moien collecte certaines Données personnelles de ses Utilisateurs.
+                  Ce document peut être imprimé à des fins de consultation en utilisant la commande d'impression dans les paramètres de tout navigateur.
+               </p>
+               <br>
+               <br>
+               <h2 class="text-2xl md:text-3xl font-Over-SemiBold mb-5">
+               Données personnelles collectées pour les raison suivantes et en utilisant les services suivants:
+               <h2>
+               <div class="flex flex-col justify-around lg:flex-row">
+                  <div  class="flex flex-row px-4 sm:px-0 pb-4 sm:py-9">
+                     <div class="bg-moien-pink flex flex-col justify-start w-9 mr-4"> 
+                        <img class="text-moien-blue font-Over-SemiBold" src="/assets/statistics (1).svg" >
+                     </div>
+                     <div style="max-width: 416px;">
+                        <h2 class="mb-2 sm:mb-4 text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                        Analyses
+                        <h2>
+                        <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                           Google Analytics
+                        </p>
+                        <p class="text-base md:text-lg  text-moien-blue font-Over-Reg">
+                           Données personnelles : Données d'utilisation; traquer
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex flex-row px-4 sm:px-0 py-6 sm:py-9">
+                     <div class="bg-moien-pink flex flex-col justify-start w-9 mr-4"> 
+                        <img class="text-moien-blue font-Over-SemiBold" src="/assets/note.svg" >
+                     </div>
+                     <div style="max-width: 416px;" >
+                        <h2 class="mb-2 sm:mb-4 text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                        Hébergement web et infrastructure de backend 
+                        <h2>
+                        <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                           DigitalOcean
+                        </p>
+                        <p class="text-base md:text-lg  text-moien-blue font-Over-Reg">
+                           Données personnelles : différents types de Données indiquées dans la politique du service
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <h2 class="text-2xl md:text-3xl font-Over-SemiBold mb-3">
+               Coordonnées
+               <h2>
+               <div class="flex flex-row px-4 sm:px-8 pb-6 sm:py-9">
+                  <div class="bg-moien-pink flex flex-col justify-start w-9 mr-4"> 
+                     <img class="text-moien-blue font-Over-SemiBold" src="/assets/user-picture.svg" >
+                  </div>
+                  <div>
+                     <h2 class="mb-2 sm:mb-4 text-base md:text-lg text-moien-blue font-Over-SemiBold">
+                     propriétaire et Responsable du traitement
+                     <h2>
+                     <p class="text-base md:text-lg  text-moien-blue font-Over-Reg mb-3">
+                        Crossfunding SARL<br>
+                        9 rue belle-vue,<br>
+                        8013<br>
+                        Pays : luxembourg<br>
                      </p>
-                     <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-                      Courriel de contact du Propriétaire :
+                     <p class="text-base md:text-lg text-moien-blue font-Over-SemiBold">
+                        Courriel de contact du Propriétaire : 
+                        <span class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                        <a href="mailto:contact@moïen.com" class="hover:text-moien-gray">
+                        <u>contact@moïen.com</u></a>
+                        </span>
                      </p>
-                     <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-                      contact@moien.com
-                     </p>
+                  </div>
+               </div>
+               <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                  Derniére mise à jour : 12 février 2021
+               </p>
+               <br>
+               <p class="text-base md:text-lg text-moien-blue font-Over-SemiBold">
+                  iubenda héberge le présent contenu et ne collecte que les Données strictement nécessaires à sa fourniture.
+               </p>
+               <div class="flex flex-row justify-center md:justify-end mt-4">
+                  <a href="privacy-complet.html" class="hover:text-moien-gray">
+                  <u>Voir la Politique de confidentialité compléte</u>
+                  </a>  
+               </div>
             </div>
-       </div>
-
-       <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-        Derniére mise à jour : 12 février 2012
-       </p>
-       <br>
-       <p class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
-        iubenda héberge le présent contenu et ne collecte que les Données strictement nécessaires à sa fourniture.
-       </p>
-
-       <a href="privacy-complet.html" class="hover:text-moien-gray"><u>Voir la Politique de confidentialité compléte</u></a>  
-        
-  </div>
-   </section>
-</section>
-    
-   
-
-    <footer> 
-      <div class="flex justify-center small-device:justify-between items-center small-device:px-padding-page-x bg-moien-blue text-white text-center font-Over-Reg py-6">
-        <p class="leading-9">
-          <a class="hover:text-moien-gray"><u>Mentions légales</u></a> - <a class="hover:text-moien-gray">
-          <u>contact@moïen.com</u></a> <span class="hidden sm:inline" >-</span> <br class="block small-device:hidden">© 2021 Moïen
-        </p>
-        <div class="relative hidden small-device:block">
-            <button onclick="toggleList('listItem2')" type="button" class="group inline-flex items-center text-select-text font-Over-Reg font-light font-medium hover:text-gray-500 focus:outline-none focus:border-b-2 focus:ring-offset-2 focus:ring-moien-pink" aria-expanded="false">
-              <span>FR</span>
-              <!-- <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg> -->
-            </button>
-            <div id="listItem2" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-24 -translate-y-32 lg:ml-0 lg:left-3/4 lg:-translate-y-56/ opacity-0">
-            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
-                <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> 
-                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-grey-200">
-                    <img class="flex-shrink-0 h-6 w-6" src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                  <div class="ml-2">
-                      <p class="text-base md:text-lg  font-medium text-moien-blue">
-                        Français
-                      </p>
-                    </div>
-                  </a>
-                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                    <img class="flex-shrink-0 h-6 w-6 " src="assets/country/european-union.svg" alt="Kiwi standing on oval">
-                    <div class="ml-2">
-                      <p class="text-base md:text-lg  font-medium text-moien-blue">
-                        Anglais
-                      </p>
-                    </div>
-                  </a>
-                </div>
+         </section>
+      </section>
+      <footer>
+         <div class="flex justify-center small-device:justify-between items-center small-device:px-padding-page-x bg-moien-blue text-white text-center font-Over-Reg py-6">
+            <p class="leading-9">
+               <a href="privacy.html" class="hover:text-moien-gray">
+                  <!-- href="privacy.html" -->
+                  <u>Politique de confidentialité</u>
+               </a>
+               - 
+               <a href="cookie.html" class="hover:text-moien-gray">
+                  <!-- href="cookie.html" -->
+                  <u>Politique de cookies</u>
+               </a>
+               <span class="hidden sm:inline" >-</span> <br class="block small-device:hidden"><a href="mailto:contact@moïen.com" class="hover:text-moien-gray">
+               <u>contact@moïen.com</u></a> © 2021 Moïen
+            </p>
+            <div class="relative hidden small-device:block">
+               <button onclick="" type="button" class="group inline-flex items-center text-select-text font-Over-Reg font-light font-medium hover:text-gray-500 focus:outline-none focus:border-b-2 focus:ring-offset-2 focus:ring-moien-pink" aria-expanded="false">
+                  <span>FR</span>
+                  <!-- <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                     </svg> -->
+               </button>
             </div>
-            </div>
-            </div>
-      </div>
-    </footer>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
+         </div>
+      </footer>
+      <script type="text/javascript" src="js/main.js"></script>
+   </body>
 </html>

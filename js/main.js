@@ -26,7 +26,7 @@ const focusMethod = () => {
 };
 
 const toggleModal = () => {
-  if (!this.openMenu) {
+  if (!this.openModal) {
     document.getElementById("modalContainer").classList.remove("hidden");
     document.getElementById("modalBg").classList.remove("opacity-0");
     document.getElementById("modalBg").classList.add("opacity-100");
@@ -48,7 +48,7 @@ const toggleModal = () => {
         "translate-y-0",
         "sm:scale-100"
       );
-    this.openMenu = !this.openMenu;
+    this.openModal = !this.openModal;
   } else {
     toggleList;
     document
@@ -76,7 +76,7 @@ const toggleModal = () => {
     document.getElementById("modalBg").classList.add("opacity-0");
     document.getElementById("modalContainer").classList.add("hidden");
 
-    this.openMenu = !this.openMenu;
+    this.openModal = !this.openModal;
   }
 };
 const sendEmail = (email) => {
@@ -88,13 +88,12 @@ const sendEmail = (email) => {
     method: "post",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
     },
     body: dataToSend,
   })
     .then((resp) => {
       if (resp.status === 200) {
-        // toggleModal(); open modal !!!!
+        toggleModal();
         return resp.json();
       } else {
         console.log("Status: " + resp.status);
@@ -122,7 +121,6 @@ const getEmail = (event) => {
     event.preventDefault();
   } else {
     if (validateEmail(email)) {
-      // toggleModal();
       sendEmail(email);
     } else {
       alert("email invalid");
