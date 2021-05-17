@@ -82,6 +82,7 @@ module.exports = {
       spacing: {
         '4.5': '4.5rem',
       },
+
       width: {
         "exp-width": "12.53%",
         "parcours-width": "775.8px",
@@ -104,6 +105,9 @@ module.exports = {
         "Ix-h": "16.28%",
         "Ix-h-mobile": "62.96%",
       },
+      minHeight: {
+        'jobScreen': 'calc(100vh-',
+       },
       screens: {
         "ipadPro": "1025px",
         "phone": "423px",

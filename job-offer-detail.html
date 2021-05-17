@@ -72,32 +72,51 @@
                </div>
             </div>
          </Header>
-         <section class="px-4 md:px-24 xl:px-40">
-            <span>
-                <p class="text-base flex items-center">
-                    <img class="w-8" src="assets/location-pin.svg" alt="">
-                    Tunis
-                  </p>
-                </span>
-                      
-            <div class="flex flex-col items-center">
-               <h2 class="text-3xl md:text-5xl font-Over-SemiBold mb-5">
-                Développeur React Native confirmé
-               </h2>
-               <p class="text-base md:text-lg  font-Over-Reg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, accusantium. Quam, magni laboriosam distinctio nostrum mollitia velit ad assumenda ipsum qui animi maiores, nobis minus, illo optio ipsam tempora consequatur.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dolores laborum, labore sapiente quis culpa voluptatibus sint commodi! Sed earum a eius doloribus assumenda eveniet numquam vero ut minus cumque!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum nesciunt vel magnam deleniti laboriosam voluptatum perspiciatis ipsa facilis ad tenetur repellat temporibus recusandae quibusdam exercitationem, inventore, earum possimus consequuntur?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea dolores veniam facilis corporis aperiam velit eos libero, consequuntur nisi! In nam necessitatibus praesentium ducimus dolore, incidunt fugiat natus vero?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo autem architecto sequi et dicta temporibus mollitia, porro earum modi eius, sed, quis dolor. Alias totam adipisci ab qui. Aspernatur!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dicta velit at reprehenderit doloribus corporis necessitatibus iure. Neque omnis blanditiis accusamus, atque, nobis unde doloribus consequatur debitis dolorem, consectetur officiis.
-            </p>
-               <br>
-               <br>
-            
-            
-            </div>
-            <div class="flex flex-row justify-center md:justify-end mt-4">
+         <section class="flex flex-col items-center px-4 md:px-24 xl:px-40">
+             <div style="max-width: 1440px;" class="flex flex-col">
+                <div class="flex mb-6">
+                    <p class="text-lg md:text-xl font-Over-SemiBold flex items-center mr-8">
+                        <img class="w-6 md:w-8" src="assets/location-pin.svg" alt="">
+                        Tunis
+                      </p>
+                      <p class="text-lg md:text-xl font-Over-SemiBold flex items-center mr-8">
+                        <img class="w-6 md:w-8 mr-1" src="assets/clock-circular-outline.svg" alt="">
+                        Mai 17
+                      </p>
+                      <p class="text-lg md:text-xl font-Over-SemiBold flex items-center">
+                        <img class="w-6 md:w-8" src="assets/contract-outlined.svg" alt="">
+                        CDI
+                      </p>
+                    </div>
+                          
+                <div class="flex flex-col items-center">
+                   <h2 class="text-3xl md:text-5xl text-center font-Over-SemiBold mb-5">
+                    Développeur React Native confirmé
+                   </h2>
+                   <p class="text-base md:text-lg font-Over-Reg mb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, accusantium. Quam, magni laboriosam distinctio nostrum mollitia velit ad assumenda ipsum qui animi maiores, nobis minus, illo optio ipsam tempora consequatur.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dolores laborum, labore sapiente quis culpa voluptatibus sint commodi! Sed earum a eius doloribus assumenda eveniet numquam vero ut minus cumque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum nesciunt vel magnam deleniti laboriosam voluptatum perspiciatis ipsa facilis ad tenetur repellat temporibus recusandae quibusdam exercitationem, inventore, earum possimus consequuntur?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea dolores veniam facilis corporis aperiam velit eos libero, consequuntur nisi! In nam necessitatibus praesentium ducimus dolore, incidunt fugiat natus vero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo autem architecto sequi et dicta temporibus mollitia, porro earum modi eius, sed, quis dolor. Alias totam adipisci ab qui. Aspernatur!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dicta velit at reprehenderit doloribus corporis necessitatibus iure. Neque omnis blanditiis accusamus, atque, nobis unde doloribus consequatur debitis dolorem, consectetur officiis.
+                </p>
+                <h2 class="text-2xl md:text-3xl text-center font-Over-SemiBold mb-5">
+                    Candidature
+                   </h2>
+                   <p class="text-base md:text-lg  font-Over-Reg">
+                    Envie de rejoindre une aventure qui démarre et de la construire avec nous ?
+                    Fais-nous parvenir ta candidature par email à :
+                    <span class="text-base md:text-lg  text-moien-blue font-Over-SemiBold">
+                        <a href="mailto:contact@moïen.com" class="hover:text-moien-gray">
+                        <u>contact@moïen.com</u></a>
+                        </span>
+                </p>
+                   <br>
+                </div>
+             </div>
+         
+            <div class="flex flex-row justify-center md:justify-end">
                 <a href="job-offer.html" class="hover:text-moien-gray">
                 <u>Revenir à la liste des offres d'emploi</u>
                 </a>  
@@ -122,9 +141,6 @@
             <div class="relative hidden small-device:block">
                <button onclick="" type="button" class="group inline-flex items-center text-select-text font-Over-Reg font-light font-medium hover:text-gray-500 focus:outline-none focus:border-b-2 focus:ring-offset-2 focus:ring-moien-pink" aria-expanded="false">
                   <span>FR</span>
-                  <!-- <svg class=" ml-2 h-5 w-5 group-hover:text-moien-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                     </svg> -->
                </button>
             </div>
          </div>
