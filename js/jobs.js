@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     })
     .catch((err) => {
       if (err === "server") return;
-      console.log(err);
+      alert("Connexion Problem")
     });
 });
 const onClickJob = (id) => {
