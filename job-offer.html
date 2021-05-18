@@ -7,6 +7,7 @@
       <link href="css/dist/tailwind.css" rel="stylesheet">
       <link rel="stylesheet" href="css/typography-font/style.css">
       <link rel="icon" type="image/svg" href="assets/img/moien-rgb-blue.png" />
+      <link rel="stylesheet" href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css" integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM=" crossorigin="anonymous">
       <title>Moïen</title>
    </head>
    <body>
@@ -43,7 +44,7 @@
                   </a>
                </div>
                <div class="flex justify-end h-full w-full mr-margin-right-cloud">
-                  <img class="hidden sm:block" src="assets/img/nuage.png" alt="" srcset="">
+                  <!-- <img class="hidden sm:block" src="assets/img/nuage.png" alt="" srcset=""> -->
                </div>
                <div class="relative">
                   <button onclick="toggleList('listItem1')" type="button" 
@@ -87,63 +88,87 @@
                   </p>
                   <h2 class="text-2xl md:text-3xl font-Over-SemiBold mb-5">
                      Les opportunités à pourvoir !
-                     <h2>
-            <div  class="grid grid-cols-1 ipadPro:grid-cols-2 gap-4" >
-                <div id="1" onclick="onClickJob(this.id)" class="group cursor-pointer rounded-lg p-4 flex flex-col justify-between leading-normal bg-moien-lightblue hover:shadow-lg hover:border-transparent">
-                    <div class="mb-8">
-                      <p class="text-base flex items-center">
-                       <img class="w-4" src="assets/contract.svg" alt="">
-                       CDI
-                      </p>
-                      <div class="text-moien-blue font-bold text-xl mb-2">
-                        Développeur React Native confirmé</div>
-                      <p class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-                    </div>
-                    <div class="flex items-center">
-                      <!-- <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink"> -->
-                      <div class="text-sm">
-                        <p class="text-black leading-none">Tunis</p>
-                        <p class="text-grey-dark">Mai 17</p>
+                  </h2>
+                     
+            <div id="jobList" class="grid grid-cols-1 ipadPro:grid-cols-2 gap-4 w-full ipadPro:gap-12" >
+                  <div class="hidden">
+                     <div data-type="template" onclick="onClickJob(this.id)" class="group cursor-pointer rounded-lg p-4 flex flex-col justify-between leading-normal bg-white hover:shadow-lg hover:border-transparent">
+                        <div class="mb-8">
+                           <p class="text-base flex items-center">
+                              <img class="w-4" src="assets/contract.svg" alt="">
+                            <span id="contractType">CDI</span>
+                             </p>
+                          <div id="title" class="text-moien-blue font-bold text-xl mb-2">
+                            Développeur React Native confirmé</div>
+                          <p id="desc" class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                        </div>
+                        <div class="flex items-center">
+                          <div class="text-sm">
+                            <p id="location" class="text-black leading-none">Tunis</p>
+                            <p id="date" class="text-grey-dark">Mai 17</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
                   </div>
-                  <div id="1" onclick="onClickJob(this.id)" class="group cursor-pointer  rounded-lg p-4 flex flex-col justify-between leading-normal bg-moien-lightblue hover:shadow-lg hover:border-transparent">
-                     <div class="mb-8">
-                        <p class="text-base flex items-center">
-                           <img class="w-4" src="assets/contract.svg" alt="">
-                           CDI
-                          </p>
-                       <div class="text-moien-blue font-bold text-xl mb-2">
-                         Développeur React Native confirmé</div>
-                       <p class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-                     </div>
-                     <div class="flex items-center">
-                       <!-- <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink"> -->
-                       <div class="text-sm">
-                         <p class="text-black leading-none">Tunis</p>
-                         <p class="text-grey-dark">Mai 17</p>
-                       </div>
-                     </div>
-                   </div>
-                   <div id="1" onclick="onClickJob(this.id)" class="group cursor-pointer  rounded-lg p-4 flex flex-col justify-between leading-normal bg-moien-lightblue hover:shadow-lg hover:border-transparent">
-                     <div class="mb-8">
-                        <p class="text-base flex items-center">
-                           <img class="w-4" src="assets/contract.svg" alt="">
-                           CDI
-                          </p>
-                       <div class="text-moien-blue font-bold text-xl mb-2">
-                         Développeur React Native confirmé</div>
-                       <p class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-                     </div>
-                     <div class="flex items-center">
-                       <!-- <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink"> -->
-                       <div class="text-sm">
-                         <p class="text-black leading-none">Tunis</p>
-                         <p class="text-grey-dark">Mai 17</p>
-                       </div>
-                     </div>
-                   </div>
+                     <div id="loader1" class="animate-pulse cursor-pointer rounded-lg p-4 flex flex-col justify-between leading-normal bg-white hover:shadow-lg hover:border-transparent ">
+                        <div class="mb-6">
+                           <p class="text-base flex items-center">
+                            <span data-placeholder id="contractType" class="mb-1 h-5 w-16 overflow-hidden relative bg-gray-200"></span>
+                             </p>
+                          <div data-placeholder id="title" class="mb-3 h-5 w-2/3 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="mb-2 h-5 w-full overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="mb-2 h-5 w-full overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="h-5 w-56 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div class="text-sm">
+                           <div data-placeholder id="title" class="mb-1 h-5 w-10 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="h-5 w-14 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="loader" class="animate-pulse cursor-pointer rounded-lg p-4 flex flex-col justify-between leading-normal bg-white hover:shadow-lg hover:border-transparent ">
+                        <div class="mb-6">
+                           <p class="text-base flex items-center">
+                            <span data-placeholder id="contractType" class="mb-1 h-5 w-16 overflow-hidden relative bg-gray-200"></span>
+                             </p>
+                          <div data-placeholder id="title" class="mb-3 h-5 w-2/3 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="mb-2 h-5 w-full overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="mb-2 h-5 w-96 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="h-5 w-56 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div class="text-sm">
+                           <div data-placeholder id="title" class="mb-1 h-5 w-10 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                           <div data-placeholder id="title" class="h-5 w-14 overflow-hidden relative bg-gray-200">
+                            
+                           </div>
+                          </div>
+                        </div>
             </div>
+            
          </div>
          </section>
       </section>
@@ -172,6 +197,32 @@
             </div>
          </div>
       </footer>
-      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/jobs.js"></script>
    </body>
+   <style>
+       [data-placeholder]::after {
+        content: " ";
+        box-shadow: 0 0 50px 9px rgba(254,254,254);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100%; 
+        animation: load 1s infinite;
+    }
+    #loader {
+      animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% {
+         opacity: 1;
+      }
+      50% {
+         opacity: .9;
+      }
+      }
+    @keyframes load {
+        0%{ left: -100%}
+        100%{ left: 150%}
+    }
+   </style>
 </html>

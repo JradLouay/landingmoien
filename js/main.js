@@ -136,7 +136,3 @@ window.onclick = (event) => {
 
 emailForm.addEventListener("submit", getEmail);
 
-function onClickJob(id) {
-    window.location.href ='/job-offer-detail.html?jobId='+id; 
-  
-}
