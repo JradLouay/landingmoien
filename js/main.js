@@ -50,7 +50,6 @@ const toggleModal = () => {
       );
     this.openModal = !this.openModal;
   } else {
-    toggleList;
     document
       .getElementById("modalContent")
       .classList.remove(
@@ -84,7 +83,7 @@ const sendEmail = (email) => {
     email: email,
   });
   let dataReceived = "";
-  fetch(" http://moien.ersys-solutions.com:7035/API/customer/prospect", {
+  fetch("https://testbo.moien.com/API/customer/prospect", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
@@ -94,9 +93,9 @@ const sendEmail = (email) => {
     .then((resp) => {
       if (resp.status === 200) {
         toggleModal();
+        document.querySelector("#emailInput").value = "";
         return resp.json();
       } else {
-        console.log("Status: " + resp.status);
         alert("Internet Connexion lost !!!");
         return Promise.reject("server");
       }
@@ -106,11 +105,11 @@ const sendEmail = (email) => {
     })
     .catch((err) => {
       if (err === "server") return;
-      console.log(err);
     });
 };
 const validateEmail = (email) => {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 };
 const getEmail = (event) => {
@@ -130,9 +129,13 @@ const getEmail = (event) => {
 };
 
 window.onclick = (event) => {
-  console.log(event.target.id);
   if (event.target.id === "modalBg") toggleModal();
 };
+// window.addEventListener("mousedown", function (event) {
+//   let list = document.getElementById("listItem1");
+//   if (list.classList.contains("opacity-100")) {
+//     toggleList();
+//   }
+// });
 
 emailForm.addEventListener("submit", getEmail);
-

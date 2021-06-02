@@ -1,25 +1,24 @@
 module.exports = {
-  purge: ["./index.html", "./js/main"],
+  purge: ["./**/*.html", "./**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-   
     fontFamily: {
       "Over-Reg": ["Overpass-Regular"],
       "Over-SemiBold": ["Overpass-SemiBold"],
     },
     fontSize: {
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'tiny': '.875rem',
-       'base': '1rem',
-       'lg': '1.125rem',
-       'xl': '1.25rem',
-       '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-       '5xl': '3rem',
-       '6xl': '4rem',
-      '7xl': '5rem',
+      xs: ".75rem",
+      sm: ".875rem",
+      tiny: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
       "first-header": [
         "42px",
         {
@@ -77,10 +76,10 @@ module.exports = {
     },
     extend: {
       inset: {
-        '-1/5': '-21%',
-       },
+        "-1/5": "-21%",
+      },
       spacing: {
-        '4.5': '4.5rem',
+        4.5: "4.5rem",
       },
 
       width: {
@@ -93,6 +92,7 @@ module.exports = {
         "Ix-w-mobile": "62.96%",
       },
       maxWidth: {
+        "max-w-impact-web-first-arg": "550px",
         "max-w-impact-web": "360px",
         "max-w-impact-mobile": "300px",
       },
@@ -105,17 +105,13 @@ module.exports = {
         "Ix-h": "16.28%",
         "Ix-h-mobile": "62.96%",
       },
-      minHeight: {
-        'jobScreen': 'calc(100vh-',
-       },
       screens: {
-        "ipadPro": "1025px",
-        "phone": "423px",
+        ipadPro: "1025px",
+        phone: "423px",
         "small-device": "545px",
-        'customx': {'raw': '(max-height: 812px),(max-width:375px)'},
-        'custom7': {'raw': '(max-height: 667px),(max-width:375px)'},
-        'custom7+': {'raw': '(max-height: 736px),(max-width:375px)'}
-
+        customx: { raw: "(max-height: 812px),(max-width:375px)" },
+        custom7: { raw: "(max-height: 667px),(max-width:375px)" },
+        "custom7+": { raw: "(max-height: 736px),(max-width:375px)" },
       },
       spacing: {
         "margin-right-cloud": "18.53%",
@@ -124,7 +120,7 @@ module.exports = {
         "margin-hero-top": "4.75%",
         "margin-hero-x-mobile": "8.4%",
         //card
-        "margin-left-hero-img":"11.7%",
+        "margin-left-hero-img": "11.7%",
         "padding-page-x": "4.5%",
         "padding-x-card": "2.35%",
         "padding-x-card-mobile": "4.27%",
@@ -150,6 +146,7 @@ module.exports = {
         "pb-thd-section": "2.19%",
         //img-exp margin
         "mt-exp-img": "9.31%",
+        "ml-exp-img-first-arg": "7.5%",
         "ml-exp-img": "20.83%",
         "mr-exp-img": "3.08%",
         //img-parcours margin
@@ -158,13 +155,15 @@ module.exports = {
         //paddding red-plant
         "pr-red-plant": "70px",
         "pt-red-plant": "2.78%",
+        "17rem":"17rem",
+        "hero-img-right": "30%"
       },
       width: {
         input: "545px",
       },
       height: {
-        "phoneHeightMobile": "613px",
-        "phoneHeightDesktop" : "669px"
+        phoneHeightMobile: "613px",
+        phoneHeightDesktop: "669px",
       },
       colors: {
         "moien-pink": "#FEEDEC",

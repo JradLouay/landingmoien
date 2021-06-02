@@ -55,7 +55,7 @@
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                       </svg>
                 </button>
-                <div id="listItem1" class="absolute z-10 mr-4 mt-2 transform px-2 -translate-x-2/3 lg:ml-0 lg:left-3/4 lg:-translate-x-3/4 opacity-0">
+                <div id="listItem1" class="absolute z-30 mr-4 mt-2 transform px-2 -translate-x-2/3 lg:ml-0 lg:left-3/4 lg:-translate-x-3/4 opacity-0">
                     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-36">
                       <div class="relative grid gap-3 sm:gap-4 bg-white px-5 py-3 font-Over-Reg"> <!-- gap between rows and sm:gap-8 sm:p-8 columns grid layout -->
                         <a onclick="chooseLanguage('french')" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
@@ -73,151 +73,158 @@
           </div>
     </Header>
     <!-- Hero section --> 
-    <section class="flex flex-grow flex-col items-stretch md:flex-row sm:px-0 "> 
-       <div class="z-20 text-moien-blue text-left phone:ml-margin-hero-left phone:mt-margin-hero-top">
-            <h2 class="text-first-header-mobile phone:text-first-header text-center phone:text-left font-Over-SemiBold mb-5">
-                Louez, sous-louez,<br class="hidden phone:block"> vivez<br class="block phone:hidden">
-                et voyagez !
-                <h2>
-                <p class="text-paragraph-mobile phone:text-paragraph text-center phone:text-left font-Over-Reg">
-                Découvrez une nouvelle<br class="block sm:hidden"> 
-                expérience locative<br class="hidden sm:block"> 
-                et simplifiez<br class="block sm:hidden"> vos démarches avec Moïen.
-              </p>
-              <div class="flex justify-center mt-2 width-full">
-                <button class="bg-transparent py-2 px-4 border border-moien-blue rounded hover:bg-moien-blue hover:text-moien-pink hover:border-transparent" onclick="focusMethod()"> 
-                  Soyez le premier informé 
-                </button>
-            </div>
+    <section class="flex flex-grow flex-col items-stretch ipadPro:flex-row sm:px-0 "> 
+       <div class="z-20 flex flex-col items-center sm:items-start text-moien-blue small-device:ml-margin-hero-left phone:mt-margin-hero-top">
+          <div style="width: fit-content; max-width: 352px;">
+            <h2 class="text-first-header-mobile phone:text-first-header text-center sm:text-left font-Over-SemiBold mb-5">
+              Louez, sous-louez,<br class="hidden phone:block"> vivez<br class="block phone:hidden">
+              et voyagez !
+              <h2>
+              <p class="text-paragraph-mobile phone:text-paragraph text-center sm:text-left font-Over-Reg">
+              Découvrez une nouvelle<br class="block sm:hidden"> 
+              expérience locative<br class="hidden sm:block"> 
+              et simplifiez<br class="block sm:hidden"> vos démarches avec Moïen.
+            </p>
+            <div class="flex justify-center xl:justify-start mt-2 ">
+              <button class="bg-transparent py-2 px-4 border border-moien-blue rounded hover:bg-moien-blue hover:text-moien-pink hover:border-transparent" onclick="focusMethod()"> 
+                Soyez le premier informé 
+              </button>
+          </div>
+          </div>
         </div>
-        <div style="max-height: 629px;" class="relative flex-grow flex flex-col ipadPro:ml-margin-left-hero-img 2xl:ml-ml-exp-img  mt-4 xl:mt-0 ">
+        <div style="max-height: 629px;" class="relative flex flex-grow flex-col 2xl:ml-ml-exp-img  mt-4 xl:mt-0 ">
           <div class="overflow-hidden">
             <img style="width: 289px;" 
             src="assets/img/plant-bleu.png" 
-            class="z-10 block ipadPro:hidden absolute bottom-0 phone:left-0 -left-9" 
+            class="z-10 block md:hidden absolute bottom-0 phone:left-0 -left-9" 
             alt="" 
             srcset="">
           </div>
             <img 
             style="width:285px; height:350px" 
             src="./assets/img/VEGETAUX-2-svg.png" 
-            class="z-10 block ipadPro:hidden absolute 
+            class="z-10 block md:hidden absolute 
             -top-12 -right-16 ipadPro:-top-10 
             ipadPro:-right-24 " 
             alt="">
             
           <div class="relative h-full overflow-hidden">
             <img style="padding: inherit;" 
-            class="z-20 block ipadPro:hidden absolute mt-4 2xl:mt-28  h-phoneHeightMobile ipadPro:h-phoneHeightDesktop 2xl:h-full left-2/4 transform -translate-x-2/4 
+            class="z-20 block md:hidden absolute mt-4 2xl:mt-28  h-phoneHeightMobile ipadPro:h-phoneHeightDesktop 2xl:h-full left-2/4 transform -translate-x-2/4 
             xl:left-20 xl:transform xl:-translate-x-0" 
             src="assets/img/iPhone_moien-website (4).png" 
             alt="">
+            <img style="max-height:109%; min-width: 130% " 
+            src="/assets/img/HOME.png" 
+            class="hidden md:block absolute bottom-0 -right-hero-img-right" >
           </div>
           <!-- <img style="height:100%; width:901px" 
           src="assets/img/DESKTOP-01-05_2-03 (1).png" 
           class="hidden ipadPro:block absolute bottom-0 -right-40" > -->
-          <!-- <img style="height:100%; width:901px" 
-          src="/assets/img/DESKTOP.svg" 
-          class="hidden ipadPro:block absolute bottom-0 -right-40" > -->
+          
         </div> 
 
     </section>
 </section>
     <!-- first arg -->
-    <section class="flex flex-col-reverse justify-end ipadPro:flex-row ipadPro:justify-start items-center ipadPro:items-end bg-moien-lightblue">
-       <div class="w-exp-width h-exp-height mt-4 sm:mr-mr-exp-img sm:ml-ml-exp-img">
-         <img class="max-w-max-w-impact-mobile ipadPro:max-w-max-w-impact-web" src="assets/img/IMPACT.png" />
+    <section class="flex flex-col-reverse items-center justify-end ipadPro:flex-row ipadPro:justify-center  ipadPro:items-end bg-moien-lightblue">
+      <!-- <div class="flex bg-gray-50"> -->
+        <div class="w-exp-width h-exp-height mt-4 ipadPro:mr-mr-exp-img ipadPro:ml-ml-exp-img-first-arg">
+          <img class="max-w-max-w-impact-mobile ipadPro:max-w-max-w-impact-web-first-arg" src="assets/img/Une-seule-application.png" />
+        </div>
+        <div style="max-width: 561px;" class="flex relative sm:mb-margin-bot-card1 ipadPro:mr-36 mt-7 mx-margin-x-card-mobile md:mx-0 sm:pr-pr-red-plant sm:pt-20">
+         <div class="z-10 rounded-lg bg-white shadow-lg xl:max-w-prose px-4 sm:px-8 py-6 sm:py-9">
+            <h2 class="mb-4 text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+               Une seule application pour<br class="hidden lg:block"> tous vos besoins
+              <h2>
+                 <p class="font-Over-Reg font-normal text-paragraph-mobile phone:text-paragraph text-moien-gray mb-6 sm:mb-8 text-center phone:text-left">
+                   Utilisez une seule et même plateforme pour trouver un logement longue durée, gérer vos locations au quotidien et planifier vos vacances.
+                 </p>
+                 <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-center phone:text-left text-moien-gray">Bénéficiez des avantages d’une sous-location encadrée, en tant que propriétaire et locataire.
+                 </p>
+          
+         </div> 
+         <img style="max-width: 230px; max-height: 345px;" class="hidden sm:block sm:absolute top-0 right-0" src="assets/img/VEGETAUX-4.svg" alt="" srcset="">
        </div>
-       <div style="max-width: 561px;" class="flex relative sm:mb-margin-bot-card1 md:mr-36 mt-7 mx-margin-x-card-mobile md:mx-0 sm:pr-pr-red-plant sm:pt-20">
-        <div class="z-10 rounded-lg bg-white shadow-lg xl:max-w-prose px-4 sm:px-8 py-6 sm:py-9">
-           <h2 class="mb-4 text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
-              Une seule application pour<br class="hidden lg:block"> tous vos besoins
-             <h2>
-                <p class="font-Over-Reg font-normal text-paragraph-mobile phone:text-paragraph text-moien-gray mb-6 sm:mb-8 text-center phone:text-left">
-                  Utilisez une seule et même plateforme pour trouver un logement longue durée, gérer vos locations au quotidien et planifier vos vacances.
-                </p>
-                <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-center phone:text-left text-moien-gray">Bénéficiez des avantages d’une sous-location encadrée, en tant que propriétaire et locataire.
-                </p>
-         
-        </div> 
-        <img style="max-width: 230px; max-height: 345px;" class="hidden sm:block sm:absolute top-0 right-0" src="assets/img/VEGETAUX-4.svg" alt="" srcset="">
-      </div> 
+      <!-- </div>  -->
     </section>
     <!-- 2nd arg --> 
-    <section class="flex-row xl:relative bg-moien-lightblue w-full xl:pb-28"> 
-  <div >
-    <div class="flex w-full">
-      <div class="z-10 rounded-lg bg-white shadow-lg mx-margin-x-card-mobile mt-4 mb-4 sm:ml-margin-cards sm:mt-margin-top-card2 px-4 sm:px-8 py-6 sm:py-9">
-          <h2 class="mb-4 text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
-            Votre parcours locatif géré <br>de A à Z
-            <h2>
-              <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray text-center phone:text-left">
-                Simplifiez vos démarches en tant que locataire,<br class="hidden sm:block">propriétaire ou professionnel de l’immobilier.
-              <ul class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray mt-6 phone:mt-8"> 
-                    <li class="flex items-stretch">
-                      <div class="mt-1 mr-2">
-                        <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                        </svg>
-                      </div>
-                        Publication de biens courte et longue durée
-                    </li>
-                    <li class="flex items-stretch">
-                      <div class="mt-1 mr-2">
-                        <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                        </svg>
-                      </div>
-                      Réservation et prise de rendez-vous
-                    </li>
-                    <li class="flex items-stretch">
-                      <div class="mt-1 mr-2">
-                        <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                        </svg>
-                      </div>
-                      Saisie du dossier locatif
-                    </li>
-                    <li class="flex items-stretch">
-                      <div class="mt-1 mr-2">
-                        <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                        </svg>
-                      </div>
-                      État des lieux pré-rempli
-                    </li>
-                    <li class="flex items-stretch">
-                      <div class="mt-1 mr-2">
-                        <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                        </svg>
-                      </div>
-                      Paiement des loyers 
-                    </li>
-                    <li class="flex items-stretch">
-                      <div class="mt-1 mr-2">
-                        <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                        </svg>
-                      </div>
-                      Déclaration et gestion des sinistres  
-                    </li>
-                </ul> 
-              </p>
-      </div>
-      </div>
-      <img style="max-width: 777px" class="xl:absolute m-auto lg:mr-36 xl:mr-44 xl:bottom-0 xl:right-0" src="assets/img/ONGLET-1.svg" alt="" >
-
-  </div>
+    <section class="flex justify-center bg-moien-lightblue">
+      <section style="max-width:1440px" class="flex-row xl:relative w-full xl:pb-28 "> 
+        <div >
+          <div class="flex w-full justify-center ipadPro:justify-start">
+            <div class="z-10 rounded-lg bg-white shadow-lg mx-margin-x-card-mobile mt-4 mb-4 ipadPro:ml-margin-cards sm:mt-margin-top-card2 px-4 sm:px-8 py-6 sm:py-9">
+                <h2 class="mb-4 text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
+                  Votre parcours locatif géré <br>de A à Z
+                  <h2>
+                    <p class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray text-center phone:text-left">
+                      Simplifiez vos démarches en tant que locataire,<br class="hidden sm:block">propriétaire ou professionnel de l’immobilier.
+                    <ul class="font-Over-Reg text-paragraph-mobile phone:text-paragraph text-moien-gray mt-6 phone:mt-8"> 
+                          <li class="flex items-stretch">
+                            <div class="mt-1 mr-2">
+                              <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                              </svg>
+                            </div>
+                              Publication de biens courte et longue durée
+                          </li>
+                          <li class="flex items-stretch">
+                            <div class="mt-1 mr-2">
+                              <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                              </svg>
+                            </div>
+                            Réservation et prise de rendez-vous
+                          </li>
+                          <li class="flex items-stretch">
+                            <div class="mt-1 mr-2">
+                              <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                              </svg>
+                            </div>
+                            Saisie du dossier locatif
+                          </li>
+                          <li class="flex items-stretch">
+                            <div class="mt-1 mr-2">
+                              <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                              </svg>
+                            </div>
+                            État des lieux pré-rempli
+                          </li>
+                          <li class="flex items-stretch">
+                            <div class="mt-1 mr-2">
+                              <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                              </svg>
+                            </div>
+                            Paiement des loyers 
+                          </li>
+                          <li class="flex items-stretch">
+                            <div class="mt-1 mr-2">
+                              <svg class="h-4 phone:h-5 text-moien-green" fill="currentColor" aria-hidden="true" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                              </svg>
+                            </div>
+                            Déclaration et gestion des sinistres  
+                          </li>
+                      </ul> 
+                    </p>
+            </div>
+            </div>
+            <img style="max-width: 777px" class="block xl:hidden xl:absolute m-auto lg:mr-25 xl:mr-44 xl:bottom-0 xl:right-0" src="assets/img/ONGLET-1.svg" alt="" >
+            <img style="max-width: 777px" class="hidden xl:block xl:absolute m-auto lg:mr-36 xl:mr-52 xl:bottom-0 xl:right-0" src="assets/img/LOCATION-AZ.png" alt="" >
+        </div>
+          </section>
     </section>
     
   
     <!-- 3rd arg -->
-    <section class="flex flex-col-reverse justify-end ipadPro:flex-row ipadPro:justify-start sm:pb-16 items-center sm:items-end bg-moien-lightblue">
+    <section class="flex flex-col-reverse justify-end ipadPro:flex-row ipadPro:justify-start sm:pb-16 items-center ipadPro:items-end bg-moien-lightblue">
       <div class="hidden ipadPro:block w-exp-width h-exp-height mt-4 sm:mr-mr-exp-img sm:ml-ml-exp-img">
         <img style="max-width: 360px" src="assets/img/IMPACT.png" />
       </div>
-       <div style="max-width: 513px;" class="md:mr-margin-cards sm:mt-7 mx-margin-x-card-mobile mb-14 sm:mb-margin-bot-card1 md:mx-0 mt-4 rounded-lg bg-white shadow-lg px-4 sm:px-8 py-6 sm:py-9">
+       <div style="max-width: 513px;" class="ipadPro:mr-margin-cards sm:mt-7 mx-margin-x-card-mobile mb-14 sm:mb-margin-bot-card1 md:mx-0 mt-4 rounded-lg bg-white shadow-lg px-4 sm:px-8 py-6 sm:py-9">
           <h2 class="mb-margin-header-parag text-center phone:text-left text-second-header-mobile phone:text-second-header text-moien-blue font-Over-SemiBold">
             Un impact sur l’environnement<br class="hidden 2xl:block"> limité
             <h2>
@@ -249,7 +256,7 @@
           </div>
     </section>
     <!-- modal  -->
-<div id="modalContainer" class="hidden fixed z-30 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+<div id="modalContainer" class="hidden fixed z-40 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
   <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
     <!--
       Background overlay, show/hide based on modal state.
